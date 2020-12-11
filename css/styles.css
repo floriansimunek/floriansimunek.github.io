@@ -89,6 +89,14 @@ h2::after {
 }
 
 /* main-content */
+#main-content {
+  margin-top: 100px;
+}
+@media screen and (min-width: 768px) {
+  #main-content {
+    margin-top: 200px;
+  }
+}
 #main-content #img_me {
   border-radius: 50%;
   border: #FFF 10px solid;
@@ -115,6 +123,22 @@ h2::after {
 /* skills */
 .skills-title {
   font-size: 20px;
+}
+
+.skill {
+  transition: transform 0.5s ease;
+}
+.skill:hover {
+  transform: scale(1.1);
+}
+
+/* professional experiences */
+.exp-pro_card {
+  transition: all 0.5s ease;
+}
+.exp-pro_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 17px rgba(0, 0, 0, 0.12);
 }
 
 /*# sourceMappingURL=styles.css.map */
