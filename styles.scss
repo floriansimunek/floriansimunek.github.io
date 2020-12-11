@@ -2,11 +2,12 @@
 *{
     margin: 0;
     padding: 0;
+    color: #424242 !important;
 }
 
 body{
     font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
-    background-color: #FAFAFA !important;
+    background-color: #f5f5f5 !important;
 }
 
 /* HEADER */
@@ -15,9 +16,8 @@ body{
         display: flex;
         flex-direction: row;
         align-items: center;
-        color: #424242 !important;
         text-decoration: none;
-        
+
         @media screen and (max-width:768px){
             justify-content: center;
         }
@@ -36,7 +36,7 @@ body{
                 line-height: 40px;
                 font-size: 35px;
                 text-align: center;
-                color: white;
+                color: white !important;
                 font-weight: bold;
             }
 
@@ -57,5 +57,26 @@ body{
         &-item{
             font-size: 18px;
         }
+    }
+}
+
+/* main-content */
+#main-content{
+    #img_me{
+        border-radius: 50%;
+        border: #FFF 10px solid;
+        -webkit-box-shadow: 0px 0px 40px 10px rgba(0,0,0,0.05); 
+        box-shadow: 0px 0px 40px 10px rgba(0,0,0,0.05);
+        width: 300px;
+        height: 300px;
+    }
+} 
+
+#main-names{
+    font-weight: bold;
+    display: inline-block;
+
+    #lastname{
+        font-weight: 400;
     }
 }
