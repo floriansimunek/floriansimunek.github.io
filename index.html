@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="css/styles.css">
         <!-- Bootstrap + Font Awesome -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" defer></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" defer></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
@@ -49,22 +49,22 @@
                 </ul>
             </div>
         </nav>
-        
-        <!-- main content -->
+
+        <!-- main content block -->
         <div id="main-content" class="container">
-            <!-- image -->
             <div class="row d-flex align-items-center">
+                <!-- image -->
                 <div class="col-sm-12 col-md-5 col-lg-5 d-flex justify-content-center">
-                    <img class="mt-5" id="img_me" src="images/FLO_PNG-square.png" alt="Photo Florian SIMUNEK">
+                    <img class="mt-4" id="img_me" src="images/FLO_PNG-square.png" alt="Photo Florian SIMUNEK">
                 </div>
                 <!-- description -->
                 <div id="description" class="mt-2 col-sm-12 col-md-5 col-lg-5 d-flex flex-column">
                     <label id="job" class="text-muted text-center">Développeur Web / Systèmes Numériques</label>
                     <h1 id="main-names" class="text-center">Florian <span id="lastname">SIMUNEK</span></h1>
                     <label id="description-text" class="text-justify mt-2">
-                    Diplômé d’un <span class="strong">BAC+2 (B.T.S. Système Numérique)</span>, 
-                    j’ai choisi d’orienter ma carrière dans l’informatique et les nouvelles technologies 
-                    car je suis passionné par ces domaines depuis de nombreuses années.
+                        Diplômé d’un <span class="strong">BAC+2 (B.T.S. Système Numérique)</span>, 
+                        j’ai choisi d’orienter ma carrière dans l’informatique et les nouvelles technologies 
+                        car je suis passionné par ces domaines depuis de nombreuses années.
                     </label>
                     <!-- buttons -->
                     <a href="docs/CV.pdf" target="_blank" class="btn btn-primary text-white mt-2">Télécharger CV</a>
@@ -73,6 +73,75 @@
             </div>
         </div>
 
+        <!-- divider -->
+        <div class="divider"></div>
 
+        <!-- skills block -->
+        <div id="skills" class="container mt-5">
+            <div class="row d-flex justify-content-center">
+                <!-- skills title -->
+                <h2 class="text-center text-uppercase mb-5">Compétences</h2>
+                <!-- Environnements informatiques -->
+                <div id="IT" class="col-sm-12 col-md-5 col-lg-5">
+                    <div class="title row align-items-center px-2">
+                        <i class="far fa-window-restore fa-3x"></i>
+                        <p class="skills-title ml-3 mb-0">Environnements Informatiques</p>
+                    </div>
+                    <!-- list of skills -->
+                    <div class="list-group mt-3 mx-2">
+                        <div class="w-100 justify-content-between list-group-item">Windows</div>
+                        <div class="w-100 justify-content-between list-group-item">Linux</div>
+                    </div>
+                </div>
+
+                <div id="desktop" class="col-sm-12 col-md-5 col-lg-5 mt-5">
+                    <div class="title row align-items-center px-2">
+                        <i class="fas fa-desktop fa-3x"></i>
+                        <p class="skills-title ml-3 mb-0">Bureautique</p>
+                    </div>
+                    <div class="list-group mt-3 mx-2">
+                        <div class="w-100 justify-content-between list-group-item">Microsoft Office (Word, Excel, Powerpoint)</div>
+                        <div class="w-100 justify-content-between list-group-item">Visual Studio</div>
+                        <div class="w-100 justify-content-between list-group-item">Git</div>
+                        <div class="w-100 justify-content-between list-group-item">Github</div>
+                        <div class="w-100 justify-content-between list-group-item">Xampp</div>
+                    </div>
+                </div>
+
+                <div id="desktop" class="col-sm-12 col-md-5 col-lg-5 mt-5">
+                    <div class="title row align-items-center px-2">
+                        <i class="fas fa-language fa-3x"></i>
+                        <p class="skills-title ml-3 mb-0">Langages de programmation</p>
+                    </div>
+                    <div class="list-group mt-3 mx-2">
+                        <div class="w-100 justify-content-between list-group-item">C, C#, C++</div>
+                        <div class="w-100 justify-content-between list-group-item">PHP, SQL</div>
+                        <div class="w-100 justify-content-between list-group-item">HTML, CSS (Sass)</div>
+                        <div class="w-100 justify-content-between list-group-item">Javascript, jQuery</div>
+                    </div>
+                </div>
+
+                <div id="desktop" class="col-sm-12 col-md-5 col-lg-5 mt-5">
+                    <div class="title row align-items-center px-2">
+                        <i class="fab fa-wordpress-simple fa-3x"></i>
+                        <p class="skills-title ml-3 mb-0">C.M.S.</p>
+                    </div>
+                    <div class="list-group mt-3 mx-2">
+                        <div class="w-100 justify-content-between list-group-item">Wordpress</div>
+                        <div class="w-100 justify-content-between list-group-item">Prestashop</div>
+                    </div>
+                </div>
+
+                <div id="desktop" class="col-sm-12 col-md-5 col-lg-5 mt-5">
+                    <div class="title row align-items-center px-2">
+                        <i class="fab fa-bootstrap fa-3x"></i>
+                        <p class="skills-title ml-3 mb-0">C.M.S.</p>
+                    </div>
+                    <div class="list-group mt-3 mx-2">
+                        <div class="w-100 justify-content-between list-group-item">Bootstrap</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
