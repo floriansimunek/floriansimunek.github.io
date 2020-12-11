@@ -6,7 +6,7 @@
 
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif !important;
-  background-color: #F1F1F1;
+  background-color: #FAFAFA !important;
 }
 
 /* HEADER */
@@ -16,6 +16,11 @@ body {
   align-items: center;
   color: #424242 !important;
   text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .text-logo a {
+    justify-content: center;
+  }
 }
 .text-logo a:hover {
   text-decoration: none;
