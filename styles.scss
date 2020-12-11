@@ -24,6 +24,9 @@ body{
 h2{
     position: relative;
     padding-bottom: 4px;
+    display: inline-block;
+    left: 50%;
+    transform: translate(-50%);
 
     &::before{
         display: block;
