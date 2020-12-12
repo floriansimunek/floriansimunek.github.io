@@ -183,4 +183,15 @@ h2::after {
   transform: translateX(50px);
 }
 
+/* portfolio */
+#portfolio .portfolio-block .portfolio-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+  transition: all 0.5s ease;
+}
+#portfolio .portfolio-block .portfolio-image:hover {
+  transform: scale(1.1);
+}
+
 /*# sourceMappingURL=styles.css.map */

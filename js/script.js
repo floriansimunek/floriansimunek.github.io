@@ -1,3 +1,4 @@
+////////////////////smooth scrolling////////////////////////
 $(function () {
     $(".navbar a, footer a").on("click", function (event) {
         event.preventDefault();
@@ -7,3 +8,4 @@ $(function () {
         console.log({scrollTop: $(hash).offset().top-150})
     })
 })
+///////////////////////////////////////////////////////////
