@@ -1,0 +1,116 @@
+/* menu2.html */
+#page-content2 {
+    @extend %page-content-display;
+
+    .menu-title {
+        @extend %menu-title-style;
+
+        &--in {
+            @include menu--in-styles($btn-block--2-text);
+        }
+    }
+
+    #menu {
+        @include menu-styles(rgb(255, 245, 254), 'Signika');
+    }
+}
+
+#appetite {
+    .underline-block {
+        @include underline-block(#C67412);
+    }
+
+    &:hover .underline-block {
+        width: 100%;
+    }
+}
+
+#pleasure {
+    .underline-block {
+        @include underline-block(#a56799);
+    }
+
+    &:hover .underline-block {
+        width: 100%;
+    }
+}
+
+#delicacies {
+    .underline-block {
+        @include underline-block(#6e4ccc);
+    }
+
+    &:hover .underline-block {
+        width: 100%;
+    }
+}
+
+#appetite,
+#pleasure,
+#delicacies {
+    @extend %blocks-display;
+
+    &-title {
+        @extend %title-screen-display;
+    }
+
+    .title-container {
+        @extend %title-container-display;
+    }
+
+    .title-lines {
+        &-left1 {
+            @include blocks-title-left(menu2-left-line1);
+        }
+
+        &-left2 {
+            @include blocks-title-left(menu2-left-line2);
+        }
+
+        &-left3 {
+            @include blocks-title-left(menu2-left-line3);
+        }
+
+        &-right1 {
+            @include blocks-title-right(menu2-right-line1);
+        }
+
+        &-right2 {
+            @include blocks-title-right(menu2-right-line2);
+        }
+
+        &-right3 {
+            @include blocks-title-right(menu2-right-line3);
+        }
+    }
+
+    .appetite-block,
+    .pleasure-block,
+    .delicacies-block {
+        @extend %blocks-screen-display;
+    }
+
+    .left-block {
+        margin: 0 5px;
+    }
+
+    .right-block {
+        width: 10%;
+    }
+}
+
+#appetite {
+    color: rgb(198, 116, 18);
+
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+    }
+}
+
+#pleasure {
+    color: rgb(165, 103, 153);
+}
+
+#delicacies {
+    color: rgb(110, 76, 204);
+}

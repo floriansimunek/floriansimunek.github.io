@@ -1,0 +1,85 @@
+/* menu1.html */
+#page-content {
+    @extend %page-content-display;
+
+    .menu-title {
+        @extend %menu-title-style;
+
+        &--in {
+            margin: 30px auto 50px;
+            font-size: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .fa-music {
+                @include menu1-icon(50px, 0px);
+            }
+        }
+
+        &--in--bis {
+            margin: 0 auto;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            font-size: 18px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            .fa-music {
+                @include menu1-icon(30px, 5px);
+            }
+        }
+    }
+
+    #menu {
+        @include menu-styles(rgb(252, 223, 219), 'Kaushan Script');
+    }
+}
+
+#prelude,
+#point-orgue,
+#mouvement-final {
+    @extend %blocks-display;
+
+    &-title {
+        @extend %title-screen-display;
+
+        .underline-block {
+            @include underline-block(black);
+        }
+
+        &:hover .underline-block {
+            width: 100%;
+        }
+    }
+
+    .title-container {
+        @extend %title-container-display;
+    }
+
+    .title-lines {
+        &-left {
+            @include blocks-title-left(menu1-left-line);
+        }
+
+        &-right {
+            @include blocks-title-right(menu1-right-line);
+        }
+    }
+
+    .prelude-block,
+    .pointorgue-block,
+    .mouvementfinal-block {
+        @extend %blocks-screen-display;
+    }
+
+    .left-block {
+        margin: 0 5px;
+    }
+
+    .right-block {
+        width: 10%;
+    }
+}

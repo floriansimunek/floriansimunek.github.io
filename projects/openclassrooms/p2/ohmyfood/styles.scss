@@ -1,0 +1,184 @@
+@import "Utils/variables";
+@import "Utils/mixins";
+@import "Utils/extends";
+
+@import "Layouts/menu1";
+@import "Layouts/menu2";
+@import "Layouts/menu3";
+@import "Layouts/menu4";
+
+@import "Layouts/mentions-legales";
+
+@import "Utils/clean";
+
+@import "Layouts/header";
+@import "Layouts/footer";
+
+/* CONTENT */
+#app-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 25px;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 100px;
+
+    @media screen and (min-width: 600px) {
+        width: 50%;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 60%;
+    }
+
+    @media screen and (min-width: 992px) {
+        width: 50%;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        width: 30%;
+    }
+
+    .btn {
+        width: 45%;
+        min-height: 32vh;
+        text-decoration: none;
+        text-align: center;
+        margin-bottom: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+
+        @media screen and (min-width: 768px) and (orientation: landscape) {
+            min-height: 70vh;
+        }
+
+        @media screen and (min-width: 992px) and (orientation: landscape) {
+            min-height: 32vh;
+        }
+
+        &-menu {
+            h2 {
+                font-weight: 400;
+                font-size: 1em;
+            }
+        }
+
+        &--green {
+            background-color: $default-background-color;
+            color: $default-font-color;
+            font-family: 'Archivo', Arial, Helvetica, sans-serif;
+            padding: 7px 30px;
+            border-radius: 5px;
+            display: flex;
+            margin: 0 auto;
+            width: fit-content;
+            text-decoration: none;
+            font-size: 20px;
+            align-items: center;
+
+            @media screen and (min-width: 1280px) {
+                margin-bottom: 100px;
+            }
+
+            @media screen and (max-width:600px) {
+                margin-bottom: 100px;
+                margin-top: -20px;
+            }
+        }
+    }
+
+    .dot-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 60px;
+        margin-left: 15px;
+
+        &__dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: $default-font-color;
+
+            &--1 {
+                animation: flow .4s ease .0s infinite alternate;
+            }
+
+            &--2 {
+                animation: flow .4s ease .2s infinite alternate;
+            }
+
+            &--3 {
+                animation: flow .4s ease .4s infinite alternate;
+            }
+        }
+    }
+
+    @keyframes flow {
+        from {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+
+        to {
+            opacity: .20;
+            transform: scale(.75);
+        }
+    }
+
+    #btn-container {
+        width: 100%;
+    }
+
+    .btn-block {
+        &--1 {
+            font-family: 'Kaushan Script', Arial, Helvetica, sans-serif;
+            background-color: rgb(252, 223, 219);
+
+            .btn-menu--first {
+                display: flex;
+                flex-direction: column;
+                transition: transform 400ms, opacity 600ms;
+
+                &:hover {
+                    transform: scale(1.2);
+                    cursor: pointer;
+                    opacity: 0.5;
+                }
+
+                .fa-music {
+                    font-size: 35px;
+                    background: $btn-block--1-text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+
+        &--2 {
+            @include btn-block-styles('Signika', $btn-block--2-text, rgb(255, 245, 254));
+        }
+
+        &--3 {
+            @include btn-block-styles('Dancing Script', $btn-block--3-text, rgb(237, 239, 239));
+        }
+
+        &--4 {
+            @include btn-block-styles('Indie Flower', $btn-block--4-text, rgb(253, 255, 253));
+        }
+
+        &--text {
+            color: black;
+        }
+
+        &--menu {
+            color: black;
+            font-size: 24px;
+        }
+    }
+}

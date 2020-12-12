@@ -1,0 +1,62 @@
+/* menu3.html */
+#page-content3 {
+    @extend %page-content-display;
+
+    .menu-title {
+        @extend %menu-title-style;
+
+        &--in {
+            @include menu--in-styles($btn-block--3-text);
+        }
+    }
+
+    #menu {
+        @include menu-styles(rgb(237, 239, 239), 'Dancing Script');
+    }
+}
+
+#tostart,
+#tocontinue,
+#tofinish {
+    @extend %blocks-display;
+
+    &-title {
+        @extend %title-screen-display;
+
+        .underline-block {
+            @include underline-block(black);
+        }
+
+        &:hover .underline-block {
+            width: 100%;
+        }
+    }
+
+    .title-container {
+        @extend %title-container-display;
+    }
+
+    .title-lines {
+        &-left {
+            @include blocks-title-left(menu3-left-line);
+        }
+
+        &-right {
+            @include blocks-title-right(menu3-right-line);
+        }
+    }
+
+    .tostart-block,
+    .tocontinue-block,
+    .tofinish-block {
+        @extend %blocks-screen-display;
+    }
+
+    .left-block {
+        margin: 0 5px;
+    }
+
+    .right-block {
+        width: 10%;
+    }
+}

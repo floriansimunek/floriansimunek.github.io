@@ -1,0 +1,356 @@
+/* ALL */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#CV{
+    width: 50%;
+    display:flex;
+}
+
+/* LISERET */
+#Liseret{
+    background-color: rgb(254,202,7);
+    width: 35%;
+    margin-right: 50px;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+
+#face_pic{
+    display:block;
+    border-radius: 50%;
+    border: 5px solid rgb(218,175,18);
+    width:200px;
+    height:200px;
+    margin:50px auto 35px auto;
+}
+
+
+
+#contact h3, #about_me h3, #hobbies h3{
+    color: rgb(254,202,7);
+    background-color: rgb(64,64,64);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 7px 0;
+}
+
+
+
+#contact ul{
+    color: rgb(64,64,64);
+    margin: 25px auto;
+    list-style-type: none;
+    width: 75%;
+}
+
+#contact ul li{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+
+#about_me{
+
+}
+
+#about_me p{
+    width:75%;
+    margin:20px auto;
+    font-size: 16px;
+    color: rgb(64,64,64);
+    text-align: justify;
+}
+
+
+
+#hobbies_icons{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#hobbies_icons span{
+    margin: 20px 15px 20px 15px;
+}
+
+
+/* CONTENU */
+#Contenu{
+    display:inline-block;
+    vertical-align: top;
+    width:55%;
+}
+    
+#personnal_infos{
+    padding-top: 70px;
+    margin-bottom: 120px;
+}
+
+#personnal_infos h1{
+    font-size: 48px;
+}
+
+#prenom{
+    font-weight: bold;
+    color:rgb(218,175,18);
+}
+
+#nom{
+    font-weight: 200;
+}
+
+#job{
+    color: rgb(64,64,64); 
+    font-size:24px;
+}
+
+#job_underline{
+    border-bottom: 2px solid rgb(218,175,18);
+}
+
+
+
+/* FORMATIONS */
+#formations h3{
+    text-transform: uppercase;
+    border-bottom: 2px solid rgb(218,175,18);
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+#formations h3 i{
+    margin-right:20px;
+}
+
+.formation{
+    display:flex;
+    margin-top: 25px;
+}
+
+.formation .left-block{
+    width: 30%;
+    margin: 0 20px;
+    color: rgb(218,175,18);
+}
+
+.formation .right-block{
+    width: 60%;
+}
+
+.formation .left-block p{
+    color: rgb(64,64,64);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.formation .right-block p{
+    text-align:justify;
+    color: rgb(64,64,64);
+    font-size:13px;
+    margin-top:10px;
+}
+
+.formation_name{
+    color:rgb(64,64,64);
+    text-transform:uppercase;
+}
+
+.formation_title{
+    margin-top:10px;
+    color:rgb(64,64,64);
+    font-size:16px;
+}
+
+
+
+/* EXPERIENCES PROFESSIONNELLES */
+.experiences_pros{
+    margin-top:50px;
+}
+
+.experiences_pros h3{
+    text-transform: uppercase;
+    border-bottom: 2px solid rgb(218,175,18);
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+.experiences_pros h3 i{
+    margin-right:20px;
+}
+
+.experience_pro{
+    display:flex;
+    margin-top: 25px;
+}
+
+.experience_pro .left-block{
+    width: 35%;
+    margin-left: 20px;
+    color: rgb(218,175,18);
+}
+
+.experience_pro .right-block{ 
+    width: 60%;
+}
+
+.experience_pro .left-block p{
+    color: rgb(64,64,64);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.experience_pro .right-block p{
+    text-align:justify;
+    color: rgb(64,64,64);
+    font-size:13px;
+    margin-top:10px;
+}
+
+.experience_name{
+    color:rgb(64,64,64);
+    text-transform:uppercase;
+}
+
+.experience_name{
+    color:rgb(64,64,64);
+    font-size:16px;
+}
+
+.experience_title{
+    margin-top:10px;
+    color:rgb(64,64,64);
+    font-size:16px;
+}
+
+/* RECOMMANDATIONS */
+#recommandations{
+    margin-top:50px;
+}
+
+#recommandations h2{
+    text-transform: uppercase;
+    border-bottom: 2px solid rgb(218,175,18);
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+#recommandations h2 i{
+    margin-right:20px;
+}
+
+#recommandations #recommandations_infos div span{
+    display:block;
+    color: rgb(64,64,64);
+    font-size: 16px;
+}
+
+#recommandations #recommandations_infos div span:nth-child(1){
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#recommandations #recommandations_infos div span:nth-child(2){
+    font-weight: bold;
+}
+
+#recommandations #recommandations_infos div{
+    width:50%;
+}
+
+#recommandations #recommandations_infos{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    margin-top:20px;
+}
+
+
+/* ICONES */
+.hobby_icon{
+    width:64px;
+    height:64px; 
+    border: 4px solid rgb(64,64,64);
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-sim-card,
+.fa-gamepad,
+.fa-desktop{
+    color: rgb(64,64,64); 
+}
+
+.fa-graduation-cap,
+.fa-briefcase,
+.fa-pencil-alt{
+    color:rgb(218,175,18);
+}
+
+.fa-circle,
+.fa-dot-circle{
+    color:rgb(218,175,18);
+}
+
+.fa-circle{
+    font-size: 10px;
+}
+
+/* Reponsive Design */
+/* Ecran moyen : on passe la taille du CV total sur l'ensemble de la taille de l'écran */
+@media screen and (max-width: 1280px){
+    #CV{
+        width:100%; 
+    }   
+}
+
+/* Petit Ecran (Smartphone) : On passe le liseret et le contenu en column en fullscreen */
+@media screen and (orientation: landscape), (max-width: 1024px){
+    #CV{
+        width:100%;
+    }
+    
+    #hobbies{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    }
+
+}
+
+@media screen and (max-width:640px){
+    #CV{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    #Liseret{
+        width:100%; 
+    }
+    #Contenu{
+        width:90%;
+        margin:0 auto 20px auto;
+    }
+    
+    #hobbies{
+        position:inherit;
+    }
+}
+
+@media screen and (min-width:1281px){
+    #CV{
+        width:50%;
+    }
+}

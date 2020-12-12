@@ -1,0 +1,199 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url(../images/800px_COLOURBOX25038287.jpg);
+    object-fit: contain;
+    background-repeat: repeat;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 232px;
+    position: relative;
+    @media screen and (max-width: 720px) {
+        padding-bottom: 627px;      
+    }
+}
+
+.row{
+    margin: auto 0 !important;
+}
+
+/* HEADER */
+.image-banner{
+    background-image: url(../images/teddy-bear_banner.webp);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 50%;
+    filter: hue-rotate(135deg);
+    #logo{
+        filter: hue-rotate(-135deg);
+        @media screen and (max-width: 992px){
+            display:none;
+        }
+    }
+
+    #header-line{
+        filter: hue-rotate(-135deg);
+    }
+    @media screen and (max-width: 720px){
+        display:none;
+    }
+}
+
+.form-inline{
+    @media screen and (max-width: 720px){
+        display:none !important;
+    }
+    .form-control{
+        width: 500px !important;
+    }
+}
+
+html{
+    height: 100%;
+}
+
+/* FOOTER (ICONS) */
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-icons{
+    @media screen and (max-width: 600px){
+        &-block{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            .fa{
+                margin-top: 15px;
+            }
+        }        
+    }
+    .fa {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 40px;
+        text-align: center;
+        opacity: 0.8;
+        border-radius: 50%;
+        text-decoration: none;
+        transition: all 1s ease;
+        &:hover{
+            opacity: 1;
+        }
+
+        &-facebook {
+            background: #3B5998;
+            color: white;
+            transition: all 1s ease;
+            &:hover{
+                color: #3B5998;
+                background: white;
+            }
+        }
+
+        &-twitter {
+            background: #55ACEE;
+            color: white;
+            transition: all 1s ease;
+            &:hover{
+                color: #55ACEE;
+                background: white;
+            }
+        }
+
+        &-youtube-play{
+            background: #bb0000;
+            color: white;
+            transition: all 1s ease;
+            &:hover{
+                color: #bb0000;
+                background: white;
+            }            
+        }
+
+        &-snapchat-ghost{
+            background: #fffc00;
+            color: white;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            transition: all 1s ease;
+            &:hover{
+                color:#fffc00;
+                background: white;
+            }
+        }
+
+        &-linkedin{
+            background: #007bb5;
+            color: white;
+            transition: all 1s ease;
+            &:hover{
+                color: #007bb5;
+                background: white;
+            }
+        }
+    }
+}
+
+/* index.html PRODUCTS CARDS */
+.product-card{
+    transition: transform 0.5s ease;
+    &:hover{
+        transform: scale(1.05);
+    }
+
+    .card{
+        &-img-top{
+            object-fit: cover;
+            height: 200px;
+            border-radius: 2% 2% 0% 0%;
+            transition: all 0.5s ease;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+
+    &-body{
+        border-radius: 0% 0% 2% 2%;
+    }
+}
+
+/* view.product.html PRODUCT CARD */
+.productQuantityInput{
+    text-align: center;
+}
+
+/* cart.html */
+.table-shopping-cart{
+    thead{
+        @media screen and (max-width: 600px){
+            display:none;
+        }        
+    }
+}
+
+#display-cart{
+    tr{
+        @media screen and (max-width: 600px){
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+#th-quantity, #th-price{
+    width: 120px;
+}
+
+#th-void{
+    width: 200px;
+}

@@ -1,0 +1,62 @@
+/* menu4.html */
+#page-content4 {
+    @extend %page-content-display;
+
+    .menu-title {
+        @extend %menu-title-style;
+
+        &--in {
+            @include menu--in-styles($btn-block--4-text);
+        }
+    }
+
+    #menu {
+        @include menu-styles(rgb(253, 255, 253), 'Indie Flower');
+    }
+}
+
+#esquisse,
+#oeuvre,
+#art {
+    @extend %blocks-display;
+
+    &-title {
+        @extend %title-screen-display;
+
+        .underline-block {
+            @include underline-block(black);
+        }
+
+        &:hover .underline-block {
+            width: 100%;
+        }
+    }
+
+    .title-container {
+        @extend %title-container-display;
+    }
+
+    .title-lines {
+        &-left {
+            @include blocks-title-left(menu4-left-line);
+        }
+
+        &-right {
+            @include blocks-title-right(menu4-right-line);
+        }
+    }
+
+    .esquisse-block,
+    .oeuvre-block,
+    .art-block {
+        @extend %blocks-screen-display;
+    }
+
+    .left-block {
+        margin: 0 5px;
+    }
+
+    .right-block {
+        width: 10%;
+    }
+}
