@@ -8,6 +8,7 @@
 body{
     font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
     background-color: #f5f5f5 !important;
+    position: relative;
 }
 
 .strong{
@@ -53,6 +54,15 @@ h2{
 .navbar{
     -webkit-box-shadow: 0px 0px 40px 10px rgba(0,0,0,0.1); 
     box-shadow: 0px 0px 40px 10px rgba(0,0,0,0.1);
+    .nav-item{
+        a{
+            transition: all 0.5s ease-in-out;
+            &.active{
+                background: #0275d8;
+                color: #FFF !important;
+            }
+        }
+    }
 }
 
 .text-logo{
@@ -176,6 +186,13 @@ h2{
             left: -9px;
             box-sizing: content-box;
             content: "";
+        }
+    }
+
+    &-block{
+        transition: all 0.5s ease;
+        &:hover{
+            transform: translateX(50px);
         }
     }
 }

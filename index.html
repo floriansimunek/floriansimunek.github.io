@@ -17,9 +17,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
         <script src="js/script.js" defer></script>
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".navbar" data-offset="150">
         <!-- Header / Navbar -->
         <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light mb-5 py-2 py-lg-0 fixed-top">
             <div class="text-logo">
@@ -36,19 +37,19 @@
                 <!-- Navbar items -->
                 <ul class="navbar-nav ml-auto mr-4">
                     <li class="nav-item">
-                        <a href="#main-content" class="nav-link active">Moi</a>
+                        <a href="#main-content" class="nav-link">Moi</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Compétences</a>
+                        <a href="#skills" class="nav-link">Compétences</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Expériences</a>
+                        <a href="#profesionnal_experiences" class="nav-link">Expériences</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Formations</a>
+                        <a href="#schooling" class="nav-link">Formations</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Portfolio</a>
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
                     </li>
                 </ul>
             </div>
@@ -166,7 +167,7 @@
 
 
         <!-- professional experiences block -->
-        <div id="skills" class="container-fluid mt-5">
+        <div id="profesionnal_experiences" class="container-fluid mt-5">
             <div class="row d-flex justify-content-center">
                 <!-- professional experiences title -->
                 <div class="col-lg-12">
@@ -211,52 +212,75 @@
                     <!-- timeline -->
                     <div class="timeline">
                         <!-- timeline item -->
-                        <div class="timeline-item d-flex flex-column">
-                            <span class="timeline-date text-muted small"><i class="far fa-clock"></i> En cours sur 2020</span>
-                            <span class="timeline-name text-primary">Développeur Web Junior - BAC +2</span>
-                            <span class="timeline-place"><i class="fas fa-map-marker-alt"></i> <a href="https://openclassrooms.com/fr" target="_blank" class="font-weight-bold">Openclassrooms</a> - Télétravail</span><br>
-                            <p class="timeline-description text-justify">
-                                La formation Développeur Web se sépare en plusieurs projets, ils sont consultables à cette adresse : https://floriansimunek.github.io/<br><br>
-                                Chaque projet validant une compétence spécifique telle que, le HTML/CSS, les animations avec Sass, le SEO, le JavaScript... <br>
+                        <div class="timeline-item">
+                            <div class="timeline-block d-flex flex-column">
+                                <span class="timeline-date text-muted small"><i class="far fa-clock"></i> En cours sur 2020</span>
+                                <span class="timeline-name text-primary font-weight-bold">Développeur Web Junior - BAC +2</span>
+                                <span class="timeline-place"><i class="fas fa-map-marker-alt"></i> <a href="https://openclassrooms.com/fr" target="_blank" class="font-weight-bold">Openclassrooms</a> - Télétravail</span><br>
+                                <p class="timeline-description text-justify">
+                                    La formation Développeur Web se sépare en plusieurs projets<br>
+                                    Chaque projet validant une compétence spécifique telle que, le HTML/CSS, les animations avec Sass, le SEO, le JavaScript... <br><br>
 
-                                <span class="font-weight-bold">Les projets :</span><br>
-                                - Découvrez le quotidien d'un développeur web<br>
-                                - Transformez une maquette en site web<br>
-                                - Dynamisez une page web avec des animations CSS<br>
-                                - Optimisez un site web existant<br>
-                                - Construisez un site e-commerce<br>
-                                - Construisez une API sécurisée pour une application d'avis gastronomiques<br>
-                                - Créez un réseau social d'entreprise<br>
-                            </p>
+                                    <span class="font-weight-bold">Les projets :</span><br>
+                                    - Découvrez le quotidien d'un développeur web<br>
+                                    - Transformez une maquette en site web<br>
+                                    - Dynamisez une page web avec des animations CSS<br>
+                                    - Optimisez un site web existant<br>
+                                    - Construisez un site e-commerce<br>
+                                    - Construisez une API sécurisée pour une application d'avis gastronomiques<br>
+                                    - Créez un réseau social d'entreprise<br>
+                                </p>
+                            </div>
                         </div>
                         <!-- timeline item -->
-                        <div class="timeline-item d-flex flex-column">
-                            <span class="timeline-date text-muted small"><i class="far fa-clock"></i> 2017-2019</span>
-                            <span class="timeline-name text-primary">BTS SN (Systèmes Numériques)</span>
-                            <span class="timeline-place"><i class="fas fa-map-marker-alt"></i> <a href="" target="_blank" class="font-weight-bold">Lycée Pierre Méchain</a> - Laon</span><br>
-                            <p class="timeline-description text-justify">
-                                Durant mon B.T.S., j’ai réalisé et soutenu un projet qui consiste à créer un site web, pour
-                                la restauration des plus de 1000 élèves au lycée. Ceci a permis de programmer, et d’automatiser la
-                                commande par les élèves. Cela a permis d’améliorer la gestion par l’établissement de la commande
-                                des repas, et réduisant ainsi le gaspillage alimentaire.<br><br>
-
-                                Et je devais réaliser un stage durant lequel j’ai pu développer un script PHP, en
-                                utilisant la classe FPDF, pour un site sous Prestashop, en télétravail. Cette extension permettant de
-                                télécharger les caractéristiques techniques, de plus de 2800 références (avl-roulettes.fr) au format
-                                PDF, pour les visiteurs et clients du site.
-                            </p>
+                        <div class="timeline-item">
+                            <div class="timeline-block d-flex flex-column">
+                                <span class="timeline-date text-muted small"><i class="far fa-clock"></i> 2017-2019</span>
+                                <span class="timeline-name text-primary font-weight-bold">BTS SN (Systèmes Numériques)</span>
+                                <span class="timeline-mention blockquote-footer text-muted">Mention Assez Bien</span>
+                                <span class="timeline-place"><i class="fas fa-map-marker-alt"></i> <a href="http://mechain.lyc.ac-amiens.fr/spip_pead/" target="_blank" class="font-weight-bold">Lycée Pierre Méchain</a> - Laon (Aisne)</span><br>
+                                <p class="timeline-description text-justify">
+                                    Durant mon B.T.S., j’ai réalisé et soutenu un projet qui consiste à créer un site web, pour
+                                    la restauration des plus de 1000 élèves au lycée. Ceci a permis de programmer, et d’automatiser la
+                                    commande par les élèves. Cela a permis d’améliorer la gestion par l’établissement de la commande
+                                    des repas, et réduisant ainsi le gaspillage alimentaire.
+                                    <br><br>
+                                    Et je devais réaliser un stage durant lequel j’ai pu développer un script PHP, en
+                                    utilisant la classe FPDF, pour un site sous Prestashop, en télétravail. Cette extension permettant de
+                                    télécharger les caractéristiques techniques, de plus de 2800 références <a href="https://www.avl-roulettes.fr" class="font-weight-bold">(avl-roulettes.fr)</a> au format
+                                    PDF, pour les visiteurs et clients du site.
+                                </p>
+                            </div>
                         </div>
                         <!-- timeline item -->
-                        <div class="timeline-item d-flex flex-column">
-                            <span class="timeline-date text-muted small"><i class="far fa-clock"></i> 2015-2017</span>
-                            <span class="timeline-name text-primary">BAC STI2D (Sciences et technologies de l'industrie et du développement durable)</span>
-                            <span class="timeline-place"><i class="fas fa-map-marker-alt"></i> <a href="" target="_blank" class="font-weight-bold">Lycée Jean Macé</a> - Chauny</span><br>
-                            <p class="timeline-description text-justify">
-                                Pendant mon BAC, j'ai découvert les langages de programmation et les systèmes embarqués comme Arduino.<br><br>
-                                J'ai aussi pu réaliser un projet de fin d'année dans lequel j'ai du programmer une application android qui permettait de détecter si une porte était ouverte ou non grâce à un capteur depuis une carte Arduino.
-                            </p>
+                        <div class="timeline-item">
+                            <div class="timeline-block d-flex flex-column">
+                                <span class="timeline-date text-muted small"><i class="far fa-clock"></i> 2015-2017</span>
+                                <span class="timeline-name text-primary font-weight-bold">BAC STI2D (Sciences et technologies de l'industrie et du développement durable)</span>
+                                <span class="timeline-mention blockquote-footer text-muted">Mention Assez Bien</span>
+                                <span class="timeline-place"><i class="fas fa-map-marker-alt"></i> <a href="http://www.lycees-publics-chauny.fr/" target="_blank" class="font-weight-bold">Lycée Jean Macé</a> - Chauny (Aisne)</span><br>
+                                <p class="timeline-description text-justify">
+                                    Pendant mon BAC, j'ai découvert les langages de programmation et les systèmes embarqués comme Arduino.<br><br>
+                                    J'ai du réaliser un projet, réalisé avec un groupe de 4 personnes, dont le but était de pouvoir voir si nous avions oublié de fermer 
+                                    la porte de notre maison à distance grâce à un capteur relié à une carte Arduino.<br>
+                                    Au final nous pouvions voir cela sur notre téléphone, grâce à une application android que j'ai réalisé puisqu'il s'agissait de ma partie dans le projet.
+                                </p>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- divider -->
+        <div class="divider"></div>
+
+        <!-- portfolio block -->
+        <div id="portfolio" class="container-fluid mt-5">
+            <div class="row d-flex justify-content-center">
+                <!-- portfolio title -->
+                <div class="col-lg-12">
+                    <h2 class="text-center text-uppercase mb-lg-0 mb-sm-5">Portfolio</h2>
                 </div>
             </div>
         </div>
