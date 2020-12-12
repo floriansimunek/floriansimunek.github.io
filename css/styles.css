@@ -11,6 +11,22 @@ body {
   position: relative;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0275d8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5bc0de;
+}
+
 .strong {
   font-weight: bold;
 }
@@ -191,7 +207,40 @@ h2::after {
   transition: all 0.5s ease;
 }
 #portfolio .portfolio-block .portfolio-image:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+  -webkit-box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* contact form */
+#status_block {
+  height: 90px;
+}
+#status_block .message {
+  color: red !important;
+}
+
+/* footer */
+.footer {
+  -webkit-box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 25px;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 15px 300px;
+  }
+}
+.footer a {
+  transition: all 0.5s ease;
+}
+.footer a:hover {
+  text-decoration: none;
+  color: #0275d8 !important;
 }
 
 /*# sourceMappingURL=styles.css.map */
