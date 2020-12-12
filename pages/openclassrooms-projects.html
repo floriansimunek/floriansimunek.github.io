@@ -1,12 +1,118 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets - Openclassrooms</title>
-    <link rel="icon" type="image/png" href="../images/projects/openclassrooms/favicon.png">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projets - Openclassrooms</title>
+        <link rel="icon" type="image/png" href="../images/projects/openclassrooms/favicon.png">
+        <link rel="stylesheet" href="../css/styles.css">
+        <meta name="description" content="Mes projets openclassrooms - Florian SIMUNEK">
+        <!-- Bootstrap + Font Awesome -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" defer></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    </head>
+    <body>
+        <!-- Header / Navbar -->
+        <header>
+            <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light mb-5 py-2 py-lg-0 fixed-top">
+                <div class="text-logo py-4">
+                    <a href="../index.html">
+                        <div class="logo-symbol">F</div>
+                        <div class="logo-text nav-link">Florian <span class="logo-lastname">SIMUNEK</span></div>
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </header>
 
-</body>
+        <!-- divider -->
+        <div class="divider"></div>
+
+        <!-- projects block -->
+        <div id="projects-block" class="container">
+            <div class="row">
+                <!-- openclassrooms projects block -->
+                <div id="openclassrooms-projects" class="container-fluid mt-5">
+                    <div class="row">
+                        <!-- openclassrooms projects title -->
+                        <div class="col-lg-12 mb-5">
+                            <h2 class="text-center text-uppercase mb-lg-0 mb-sm-5">Mes projets Openclassrooms</h2>
+                        </div>
+                        <!-- opc -->
+                        <!-- Project 1 - CV -->
+                        <div class="col-lg-4">
+                            <div class="card mb-5 mx-1 card_opc">
+                                <img src="../images/openclassrooms-square_logo.jpg" alt="Logo Openclassrooms" class="card-img_opc card-img-top">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h4 class="card-title text-center"><span class="text-primary font-weight-bold">CV</span><br>"Transformez une maquette en site web"</h4>
+                                    </a>
+                                    <p class="card-text text-justify">Le but du projet était de reproduire une maquette donnée en site web. J'ai donc réalisé un CV responsive en HTML et CSS.</p>
+                                    <a href="#" class="btn btn-primary text-white col-12">Voir le projet</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project 2 - e-commerce -->
+                        <div class="col-lg-4">
+                            <div class="card mb-5 mx-1 card_opc">
+                                <img src="../images/openclassrooms-square_logo.jpg" alt="Logo Openclassrooms" class="card-img_opc card-img-top">
+                                <div class="card-body">
+                                    <a href="">
+                                        <h4 class="card-title text-center"><span class="text-primary font-weight-bold">Site e-commerce</span><br>"Dynamisez une page web avec des animations CSS"</h4>
+                                    </a>
+                                    <p class="card-text text-justify">Je devais réaliser un site e-commerce de restauration avec plusieurs restaurants sur Paris. J'ai aussi découvert les animations en CSS.</p>
+                                    <a href="#" class="btn btn-primary text-white col-12">Voir le projet</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project 3 - SEO -->
+                        <div class="col-lg-4">
+                            <div class="card mb-5 mx-1 card_opc">
+                                <img src="../images/openclassrooms-square_logo.jpg" alt="Logo Openclassrooms" class="card-img_opc card-img-top">
+                                <div class="card-body">
+                                    <a href="">
+                                        <h4 class="card-title text-center"><span class="text-primary font-weight-bold">SEO</span><br>"Optimisez un site web existant"</h4>
+                                    </a>
+                                    <p class="card-text text-justify">Un site était donné, je devais lister et trouver des optimisations nécessaires au site. J'ai finalement eu un bien meilleur score sur Lighthouse après mes optimisations.</p>
+                                    <a href="#" class="btn btn-primary text-white col-12">Voir le projet</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project 4 - Site e-commerce + API -->
+                        <div class="col-lg-4">
+                            <div class="card mb-5 mx-1 card_opc">
+                                <img src="../images/openclassrooms-square_logo.jpg" alt="Logo Openclassrooms" class="card-img_opc card-img-top">
+                                <div class="card-body">
+                                    <a href="">
+                                        <h4 class="card-title text-center"><span class="text-primary font-weight-bold">API</span><br>"Construisez un site e-commerce"</h4>
+                                    </a>
+                                    <p class="card-text text-justify">Pour ce projet, j'ai du apprendre à utiliser une API en local. Grâce à cela je récupérais les informations des produits.</p>
+                                    <a href="#" class="btn btn-primary text-white col-12">Voir le projet</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- divider -->
+        <div class="divider"></div>
+
+        <div id="footer" class="footer mt-5 bg-light d-flex justify-content-center">
+            <a href="https://www.linkedin.com/in/florian-simunek/" target="_blank" class="text-muted mx-2">Linkedin</a>
+            <a href="mailto:florian.simunek@gmail.com" target="_blank" class="text-muted mx-2">Email</a>
+            <a href="https://github.com/floriansimunek" target="_blank" class="text-muted mx-2">Github</a>
+        </div>
+    </body>
 </html>

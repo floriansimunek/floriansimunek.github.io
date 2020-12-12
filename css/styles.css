@@ -243,4 +243,13 @@ h2::after {
   color: #0275d8 !important;
 }
 
+/* portfolio - openclassrooms */
+.card_opc {
+  transition: all 0.5s ease;
+}
+.card_opc:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 17px rgba(0, 0, 0, 0.12);
+}
+
 /*# sourceMappingURL=styles.css.map */
