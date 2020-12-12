@@ -212,6 +212,15 @@ h2::after {
   box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.3);
 }
 
+.project-item {
+  transition: all 0.5s ease;
+}
+.project-item:hover {
+  text-decoration: none;
+  border-bottom: #0275d8 1px solid;
+  color: #0275d8 !important;
+}
+
 /* contact form */
 #status_block {
   height: 90px;
