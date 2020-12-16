@@ -280,7 +280,7 @@ h2::after {
 }
 
 /* footer */
-.footer {
+#footer {
   -webkit-box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.1);
   position: absolute;
@@ -290,14 +290,14 @@ h2::after {
   padding: 15px 25px;
 }
 @media screen and (min-width: 768px) {
-  .footer {
+  #footer {
     padding: 15px 300px;
   }
 }
-.footer a {
+#footer a {
   transition: all 0.5s ease;
 }
-.footer a:hover {
+#footer a:hover {
   text-decoration: none;
   color: #0275d8 !important;
 }
