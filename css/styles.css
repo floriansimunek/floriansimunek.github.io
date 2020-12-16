@@ -229,6 +229,50 @@ h2::after {
   color: red !important;
 }
 
+/* contact-box */
+.contact-box {
+  text-align: center;
+  padding: 30px;
+  border-radius: 15px;
+  float: none;
+  margin: 0 auto;
+}
+
+.phone {
+  background-color: #EFE5F3;
+}
+.phone .fas {
+  color: #9b59b6 !important;
+}
+.phone .text {
+  color: #9b59b6 !important;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.mail {
+  background-color: #E0EFF9;
+}
+.mail .far {
+  color: #3498D8 !important;
+}
+.mail .text {
+  color: #3498D8 !important;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.meet {
+  background-color: #DFF7E9;
+}
+.meet .text {
+  color: #2ECC71 !important;
+  font-size: 20px;
+  font-weight: bold;
+  float: none;
+  margin: 0 auto;
+}
+
 /* footer */
 .footer {
   -webkit-box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.1);
