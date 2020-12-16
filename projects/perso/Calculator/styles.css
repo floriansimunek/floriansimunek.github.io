@@ -1,0 +1,26 @@
+#calculator{
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+#display{
+    width: 100%;
+    border: none;
+    background: white;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    font-size: 64px;
+    text-transform: uppercase;
+}
+
+#keys{
+    width: 100%;
+}
+
+button{
+    width: 24%;
+    margin: 2px 2px;
+}
