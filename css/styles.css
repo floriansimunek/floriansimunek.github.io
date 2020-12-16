@@ -236,6 +236,10 @@ h2::after {
   border-radius: 15px;
   float: none;
   margin: 0 auto;
+  transition: all 0.5s ease;
+}
+.contact-box:hover {
+  transform: scale(1.1);
 }
 
 .phone {
