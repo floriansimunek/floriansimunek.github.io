@@ -1,13 +1,21 @@
+$darker-blue: #022F40;
+$dark-blue: #183446;
+$blue: #046E8F;
+$light-blue: #0090C1;
+$lighter-blue: #38AECC;
+
+$gradient-blue: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.0351562) 0.01%, rgba(255, 255, 255, 0.75) 100%), #0090C1;
+
 /* ALL */
 * {
     margin: 0;
     padding: 0;
-    color: #424242 !important;
+    color: white !important;
 }
 
 body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
-    background-color: #f5f5f5 !important;
+    background-color: $dark-blue !important;
     position: relative;
 }
 
@@ -45,40 +53,30 @@ h2 {
     display: inline-block;
     left: 50%;
     transform: translate(-50%);
-
-    &::before {
-        display: block;
-        position: absolute;
-        content: '';
-        width: 100%;
-        background-color: #CECECE;
-        height: 2px;
-        bottom: 0;
-    }
-
-    &::after {
-        display: block;
-        position: absolute;
-        content: '';
-        width: 40%;
-        background-color: #0275d8;
-        height: 2px;
-        bottom: 0;
-    }
 }
 
 /* HEADER */
+#header{
+    background: $darker-blue;
+}
+
 .navbar {
     -webkit-box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.1);
 
     .nav-item {
+        #nav-contact {
+            background: $gradient-blue !important;
+            border-radius: 10px;
+        }
+
         a {
             transition: all 0.5s ease-in-out;
 
             &.active {
-                background: #0275d8;
+                background: $blue;
                 color: #FFF !important;
+                border-radius: 10px;
             }
         }
     }
@@ -99,10 +97,10 @@ h2 {
         .logo {
             &-symbol {
                 border-radius: 50%;
-                background: #0275d8;
-                width: 40px;
-                height: 40px;
-                line-height: 40px;
+                background: $gradient-blue;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
                 font-size: 35px;
                 text-align: center;
                 color: white !important;
@@ -134,12 +132,30 @@ h2 {
     margin-top: 100px;
 
     @media screen and (min-width: 768px) {
-        margin-top: 200px;
+        margin-top: 300px;
+    }
+
+    #job{
+        color: $light-blue !important;
+    }
+
+    .btn{
+        &-look{
+            background: $light-blue;
+        }
+
+        &-ddl{
+            background: $blue;
+        }
     }
 
     #img_me {
-        border-radius: 50%;
-        border: #FFF 10px solid;
+        border: 10px solid transparent;
+        border-image: linear-gradient(180deg , $light-blue, white);
+        border-image-slice: 1;
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+
         -webkit-box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.05);
         box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.05);
         width: 300px;
@@ -162,6 +178,10 @@ h2 {
 }
 
 /* skills */
+#skills{
+    margin-top: 200px !important;
+}
+
 .skills-title {
     font-size: 20px;
 }
@@ -193,16 +213,20 @@ h2 {
         margin: 0 100px;
     }
 
+    &-name{
+        color: $light-blue !important;
+    }
+
     &-item {
         padding-left: 30px;
         padding-bottom: 30px;
         position: relative;
 
         &::before {
-            background-color: #0275d8;
+            background-color: $light-blue;
             position: absolute;
             top: 0;
-            border: 5px solid #f5f5f5;
+            border: 5px solid $dark-blue;
             border-radius: 50%;
             width: 7px;
             height: 7px;
@@ -214,9 +238,19 @@ h2 {
 
     &-block {
         transition: all 0.5s ease;
+        background: $darker-blue;
+        width: 85%;
+        padding: 20px 20px;
+        border-radius: 10px;
+        position: relative;
+        top: -20px;
 
         &:hover {
             transform: translateX(50px);
+        }
+
+        .mention{
+            color: $lighter-blue !important;
         }
     }
 }
@@ -252,11 +286,20 @@ h2 {
 
 /* contact form */
 #status_block {
-    height: 90px;
-
+    height: 5px;
+    
     .message {
         color: red !important;
     }
+}
+
+.btn-send{
+    background: $blue !important;
+}
+
+.form-control{
+    background-color: $darker-blue !important;
+    border: none !important;
 }
 
 /* contact-box */
@@ -274,7 +317,7 @@ h2 {
 }
 
 .phone {
-    background-color: #EFE5F3;
+    background-color: $darker-blue;
 
     .fas {
         color: #9b59b6 !important;
@@ -288,7 +331,7 @@ h2 {
 }
 
 .mail {
-    background-color: #E0EFF9;
+    background-color: $darker-blue;
 
     .far {
         color: #3498D8 !important;
@@ -302,7 +345,7 @@ h2 {
 }
 
 .meet {
-    background-color: #DFF7E9;
+    background-color: $darker-blue;
 
     .text {
         color: #2ECC71 !important;
@@ -323,6 +366,7 @@ h2 {
     left: 0;
     right: 0;
     padding: 15px 25px;
+    background: $darker-blue;
 
     @media screen and(min-width: 768px) {
         padding: 15px 300px;
@@ -330,10 +374,11 @@ h2 {
 
     a {
         transition: all 0.5s ease;
+        color: $light-blue !important;
 
         &:hover {
             text-decoration: none;
-            color: #0275d8 !important;
+            color: white !important;
         }
     }
 }
