@@ -67,7 +67,7 @@ h2 {
     .nav-item {
         #nav-contact {
             background: $gradient-blue !important;
-            border-radius: 10px;
+            border-radius: 5px;
         }
 
         a {
@@ -324,6 +324,10 @@ h2 {
         border-bottom: #0275d8 1px solid;
         color: #0275d8 !important;
     }
+}
+
+.list-group-item{
+    background: $darker-blue !important;
 }
 
 /* contact form */
