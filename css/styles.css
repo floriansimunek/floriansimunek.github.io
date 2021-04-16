@@ -154,6 +154,11 @@ h2 {
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
+@media screen and (max-width: 768px) {
+  .skill-block {
+    margin: auto 25px;
+  }
+}
 .skill-title {
   display: block;
   font-size: 26px;
@@ -172,6 +177,14 @@ h2 {
 .skill .fa-wordpress,
 .skill .fa-bootstrap {
   color: #38AECC !important;
+}
+@media screen and (max-width: 768px) {
+  .skill .fa-desktop,
+.skill .fa-code,
+.skill .fa-wordpress,
+.skill .fa-bootstrap {
+    display: none !important;
+  }
 }
 
 /* professional experiences */
