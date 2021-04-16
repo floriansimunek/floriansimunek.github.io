@@ -148,19 +148,27 @@ h2 {
 }
 
 /* skills */
-#skills {
-  margin-top: 200px !important;
+.skill-block {
+  background-color: #022F40;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
-
-.skills-title {
-  font-size: 20px;
+.skill-title {
+  display: block;
+  font-size: 26px;
+  color: #38AECC !important;
+  margin-bottom: 0 !important;
 }
-
-.skill {
-  transition: transform 0.5s ease;
+.skill-description {
+  font-size: 14px;
 }
-.skill:hover {
-  transform: scale(1.1);
+.skill-list .fa-2x {
+  width: 50px;
+  height: 50px;
+}
+.skill .fa-desktop {
+  color: #38AECC !important;
 }
 
 /* professional experiences */
@@ -173,6 +181,10 @@ h2 {
 }
 
 /* timeline */
+#schooling {
+  padding-left: 150px;
+}
+
 .timeline {
   border-left: 1px solid #CECECE;
   padding: 30px 0;
@@ -251,6 +263,10 @@ h2 {
 
 .btn-send {
   background: #046E8F !important;
+  transition: all 0.5s ease !important;
+}
+.btn-send:hover {
+  background: #38AECC !important;
 }
 
 .form-control {

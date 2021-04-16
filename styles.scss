@@ -178,19 +178,34 @@ h2 {
 }
 
 /* skills */
-#skills{
-    margin-top: 200px !important;
-}
+.skill{
+    &-block{
+        background-color: $darker-blue;
+        -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
 
-.skills-title {
-    font-size: 20px;
-}
+    &-title{
+        display: block;
+        font-size: 26px;
+        color: $lighter-blue !important;
+        margin-bottom: 0 !important;
+    }
 
-.skill {
-    transition: transform 0.5s ease;
+    &-description{
+        font-size: 14px;
+    }
 
-    &:hover {
-        transform: scale(1.1);
+    &-list{
+        .fa-2x{
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .fa-desktop{
+        color: $lighter-blue !important;
     }
 }
 
@@ -205,6 +220,10 @@ h2 {
 }
 
 /* timeline */
+#schooling{
+    padding-left: 150px;
+}
+
 .timeline {
     border-left: 1px solid #CECECE;
     padding: 30px 0;
@@ -295,6 +314,11 @@ h2 {
 
 .btn-send{
     background: $blue !important;
+    transition: all 0.5s ease !important;
+
+    &:hover{
+        background: $lighter-blue !important;
+    }
 }
 
 .form-control{
