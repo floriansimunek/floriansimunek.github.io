@@ -65,9 +65,9 @@ h2 {
   transition: all 0.5s ease-in-out;
 }
 .navbar .nav-item a.active {
-  background: #046E8F;
+  background: #38AECC;
   color: #FFF !important;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .text-logo a {
@@ -177,15 +177,27 @@ h2 {
 /* professional experiences */
 .exp-pro_card {
   transition: all 0.5s ease;
+  background: #022F40 !important;
 }
 .exp-pro_card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 17px rgba(0, 0, 0, 0.12);
 }
+.exp-pro_card .card-header {
+  color: #0090C1 !important;
+}
+.exp-pro_card .card-title {
+  color: #38AECC !important;
+}
+.exp-pro_card .card-title .fa-clock {
+  color: #38AECC !important;
+}
 
 /* timeline */
-#schooling {
-  padding-left: 150px;
+@media screen and (min-width: 768px) {
+  #schooling {
+    padding-left: 150px;
+  }
 }
 
 .timeline {
@@ -220,7 +232,6 @@ h2 {
 .timeline-block {
   transition: all 0.5s ease;
   background: #022F40;
-  width: 85%;
   padding: 20px 20px;
   border-radius: 10px;
   position: relative;
@@ -228,6 +239,11 @@ h2 {
 }
 .timeline-block:hover {
   transform: translateX(50px);
+}
+@media screen and (min-width: 768px) {
+  .timeline-block {
+    width: 85%;
+  }
 }
 .timeline-block .mention {
   color: #38AECC !important;

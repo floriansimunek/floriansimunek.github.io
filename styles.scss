@@ -74,9 +74,9 @@ h2 {
             transition: all 0.5s ease-in-out;
 
             &.active {
-                background: $blue;
+                background: $lighter-blue;
                 color: #FFF !important;
-                border-radius: 10px;
+                border-radius: 5px;
             }
         }
     }
@@ -215,16 +215,33 @@ h2 {
 /* professional experiences */
 .exp-pro_card {
     transition: all 0.5s ease;
+    background: $darker-blue !important;
 
     &:hover {
         transform: translateY(-5px);
         box-shadow: 0 12px 17px rgba(0, 0, 0, 0.12);
     }
+
+    .card{
+        &-header{
+            color: $light-blue !important;
+        }
+
+        &-title{
+            color: $lighter-blue !important;
+
+            .fa-clock{
+                color: $lighter-blue !important;
+            }
+        }
+    }
 }
 
 /* timeline */
 #schooling{
-    padding-left: 150px;
+    @media screen and (min-width: 768px) {
+        padding-left: 150px;
+    }
 }
 
 .timeline {
@@ -261,7 +278,6 @@ h2 {
     &-block {
         transition: all 0.5s ease;
         background: $darker-blue;
-        width: 85%;
         padding: 20px 20px;
         border-radius: 10px;
         position: relative;
@@ -269,6 +285,10 @@ h2 {
 
         &:hover {
             transform: translateX(50px);
+        }
+
+        @media screen and (min-width: 768px){
+            width: 85%;
         }
 
         .mention{
