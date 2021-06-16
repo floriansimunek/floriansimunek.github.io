@@ -50,23 +50,45 @@ h2 {
 
 /* HEADER */
 #header {
-  background: #022F40;
+  background: #022f40;
 }
 
 .navbar {
   -webkit-box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.1);
 }
-.navbar .nav-item #nav-contact {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.0351562) 0.01%, rgba(255, 255, 255, 0.75) 100%), #0090C1 !important;
+.navbar-nav {
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .navbar-nav {
+    width: 100%;
+    padding: 10px 0;
+    justify-content: center;
+  }
+}
+.navbar-nav .nav-item {
+  width: 45%;
+  margin: 0 5px;
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .navbar-nav .nav-item {
+    width: 50%;
+    margin: 10px auto;
+  }
+}
+.navbar-nav .nav-item #nav-contact {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.0351562) 0.01%, rgba(255, 255, 255, 0.75) 100%), #0090c1 !important;
   border-radius: 5px;
 }
-.navbar .nav-item a {
+.navbar-nav .nav-item a {
   transition: all 0.5s ease-in-out;
+  text-align: center;
 }
-.navbar .nav-item a.active {
-  background: #38AECC;
-  color: #FFF !important;
+.navbar-nav .nav-item a.active {
+  background: #38aecc;
+  color: #fff !important;
   border-radius: 5px;
 }
 
@@ -82,7 +104,7 @@ h2 {
 }
 .text-logo a .logo-symbol {
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.0351562) 0.01%, rgba(255, 255, 255, 0.75) 100%), #0090C1;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.0351562) 0.01%, rgba(255, 255, 255, 0.75) 100%), #0090c1;
   width: 50px;
   height: 50px;
   line-height: 50px;
@@ -99,10 +121,6 @@ h2 {
   font-weight: 400;
 }
 
-.navbar-nav .nav-item {
-  font-size: 18px;
-}
-
 /* main-content */
 #main-content {
   margin-top: 100px;
@@ -113,17 +131,17 @@ h2 {
   }
 }
 #main-content #job {
-  color: #0090C1 !important;
+  color: #0090c1 !important;
 }
 #main-content .btn-look {
-  background: #0090C1;
+  background: #0090c1;
 }
 #main-content .btn-ddl {
-  background: #046E8F;
+  background: #046e8f;
 }
 #main-content #img_me {
   border: 10px solid transparent;
-  border-image: linear-gradient(180deg, #0090C1, white);
+  border-image: linear-gradient(180deg, #0090c1, white);
   border-image-slice: 1;
   background-origin: border-box;
   background-clip: content-box, border-box;
@@ -149,7 +167,7 @@ h2 {
 
 /* skills */
 .skill-block {
-  background-color: #022F40;
+  background-color: #022f40;
   -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -162,7 +180,7 @@ h2 {
 .skill-title {
   display: block;
   font-size: 26px;
-  color: #38AECC !important;
+  color: #38aecc !important;
   margin-bottom: 0 !important;
 }
 .skill-description {
@@ -176,7 +194,7 @@ h2 {
 .skill .fa-code,
 .skill .fa-wordpress,
 .skill .fa-bootstrap {
-  color: #38AECC !important;
+  color: #38aecc !important;
 }
 @media screen and (max-width: 768px) {
   .skill .fa-desktop,
@@ -190,20 +208,20 @@ h2 {
 /* professional experiences */
 .exp-pro_card {
   transition: all 0.5s ease;
-  background: #022F40 !important;
+  background: #022f40 !important;
 }
 .exp-pro_card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 17px rgba(0, 0, 0, 0.12);
 }
 .exp-pro_card .card-header {
-  color: #0090C1 !important;
+  color: #0090c1 !important;
 }
 .exp-pro_card .card-title {
-  color: #38AECC !important;
+  color: #38aecc !important;
 }
 .exp-pro_card .card-title .fa-clock {
-  color: #38AECC !important;
+  color: #38aecc !important;
 }
 
 /* timeline */
@@ -214,7 +232,7 @@ h2 {
 }
 
 .timeline {
-  border-left: 1px solid #CECECE;
+  border-left: 1px solid #cecece;
   padding: 30px 0;
 }
 @media screen and (min-width: 768px) {
@@ -223,7 +241,7 @@ h2 {
   }
 }
 .timeline-name {
-  color: #0090C1 !important;
+  color: #0090c1 !important;
 }
 .timeline-item {
   padding-left: 30px;
@@ -231,7 +249,7 @@ h2 {
   position: relative;
 }
 .timeline-item::before {
-  background-color: #0090C1;
+  background-color: #0090c1;
   position: absolute;
   top: 0;
   border: 5px solid #183446;
@@ -244,7 +262,7 @@ h2 {
 }
 .timeline-block {
   transition: all 0.5s ease;
-  background: #022F40;
+  background: #022f40;
   padding: 20px 20px;
   border-radius: 10px;
   position: relative;
@@ -259,7 +277,7 @@ h2 {
   }
 }
 .timeline-block .mention {
-  color: #38AECC !important;
+  color: #38aecc !important;
 }
 
 /* portfolio */
@@ -286,7 +304,7 @@ h2 {
 }
 
 .list-group-item {
-  background: #022F40 !important;
+  background: #022f40 !important;
 }
 
 /* contact form */
@@ -298,15 +316,15 @@ h2 {
 }
 
 .btn-send {
-  background: #046E8F !important;
+  background: #046e8f !important;
   transition: all 0.5s ease !important;
 }
 .btn-send:hover {
-  background: #38AECC !important;
+  background: #38aecc !important;
 }
 
 .form-control {
-  background-color: #022F40 !important;
+  background-color: #022f40 !important;
   border: none !important;
 }
 
@@ -324,7 +342,7 @@ h2 {
 }
 
 .phone {
-  background-color: #022F40;
+  background-color: #022f40;
 }
 .phone .fas {
   color: #9b59b6 !important;
@@ -336,22 +354,22 @@ h2 {
 }
 
 .mail {
-  background-color: #022F40;
+  background-color: #022f40;
 }
 .mail .far {
-  color: #3498D8 !important;
+  color: #3498d8 !important;
 }
 .mail .text {
-  color: #3498D8 !important;
+  color: #3498d8 !important;
   font-size: 20px;
   font-weight: bold;
 }
 
 .meet {
-  background-color: #022F40;
+  background-color: #022f40;
 }
 .meet .text {
-  color: #2ECC71 !important;
+  color: #2ecc71 !important;
   font-size: 20px;
   font-weight: bold;
   float: none;
@@ -368,7 +386,7 @@ h2 {
   left: 0;
   right: 0;
   padding: 15px 25px;
-  background: #022F40;
+  background: #022f40;
 }
 @media screen and (min-width: 768px) {
   #footer {
@@ -377,7 +395,7 @@ h2 {
 }
 #footer a {
   transition: all 0.5s ease;
-  color: #0090C1 !important;
+  color: #0090c1 !important;
 }
 #footer a:hover {
   text-decoration: none;
