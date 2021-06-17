@@ -80,16 +80,15 @@ h2 {
 }
 .navbar-nav .nav-item #nav-contact {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.0351562) 0.01%, rgba(255, 255, 255, 0.75) 100%), #0090c1 !important;
-  border-radius: 5px;
 }
 .navbar-nav .nav-item a {
   transition: all 0.5s ease-in-out;
   text-align: center;
+  border-radius: 3px;
 }
 .navbar-nav .nav-item a.active {
   background: #38aecc;
   color: #fff !important;
-  border-radius: 5px;
 }
 
 .text-logo a {
@@ -269,7 +268,7 @@ h2 {
   top: -20px;
 }
 .timeline-block:hover {
-  transform: translateX(50px);
+  transform: translateX(20px);
 }
 @media screen and (min-width: 768px) {
   .timeline-block {

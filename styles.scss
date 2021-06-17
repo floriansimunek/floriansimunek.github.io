@@ -85,17 +85,16 @@ h2 {
 
       #nav-contact {
         background: $gradient-blue !important;
-        border-radius: 5px;
       }
 
       a {
         transition: all 0.5s ease-in-out;
         text-align: center;
+        border-radius: 3px;
 
         &.active {
           background: $lighter-blue;
           color: #fff !important;
-          border-radius: 5px;
         }
       }
     }
@@ -303,7 +302,7 @@ h2 {
     top: -20px;
 
     &:hover {
-      transform: translateX(50px);
+      transform: translateX(20px);
     }
 
     @media screen and (min-width: 768px) {
