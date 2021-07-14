@@ -197,11 +197,12 @@ input[type=checkbox]:checked ~ #navigation-bar {
   width: 80%;
 }
 #main #profile-informations #job {
+  font-size: 14px;
   color: #096eff;
 }
 #main #profile-informations #title {
   margin: 10px auto 20px;
-  font-size: 42px;
+  font-size: 38px;
 }
 #main #profile-informations #description {
   text-align: justify;
