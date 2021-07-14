@@ -43,7 +43,6 @@ body {
   left: 0;
   top: -15%;
   z-index: -10;
-  overflow: hidden;
 }
 
 /* Burger-Menu */
@@ -164,6 +163,30 @@ input[type=checkbox]:checked ~ #navigation-bar {
   font-size: 22px;
   text-decoration: none;
   color: #fff;
+}
+
+/* Main */
+#main {
+  margin-top: 20%;
+}
+#main #profile_picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+#main #profile_picture img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 15px solid #096eff;
+  background: #0f2937;
+}
+#main #profile_picture #blob {
+  position: absolute;
+  z-index: -10;
+  left: -10%;
+  top: -20%;
 }
 
 /*# sourceMappingURL=styles.css.map */
