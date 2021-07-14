@@ -40,6 +40,7 @@ body {
 }
 
 h2 {
+  font-size: 36px;
   text-transform: uppercase;
   text-align: center;
   padding-top: 100px;
@@ -242,7 +243,7 @@ input[type=checkbox]:checked ~ #navigation-bar {
 #skills .skills-list_block {
   background: #0b386b;
   width: 80%;
-  margin: 30px auto;
+  margin: 50px auto;
   padding: 30px;
   border-radius: 20px;
 }
@@ -266,6 +267,52 @@ input[type=checkbox]:checked ~ #navigation-bar {
   width: 30px;
   height: auto;
   margin: 10px 20px 10px 0;
+}
+
+/* proExp */
+#proExp {
+  position: relative;
+}
+#proExp_blob {
+  position: absolute;
+  z-index: -10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+#proExp #proExps .proExps_block {
+  margin: 50px auto;
+  background: #0b1e28;
+  width: 80%;
+  padding: 30px;
+  border-radius: 20px;
+}
+#proExp #proExps .proExps_block i.fa-desktop,
+#proExp #proExps .proExps_block i.fa-file-code,
+#proExp #proExps .proExps_block i.fa-search {
+  font-size: 64px;
+  color: #0065ff;
+}
+#proExp #proExps .proExps_block-informations #date {
+  margin: 30px 0 0 0;
+}
+#proExp #proExps .proExps_block-informations #date i {
+  margin-right: 5px;
+}
+#proExp #proExps .proExps_block-informations #title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+#proExp #proExps .proExps_block-informations #description {
+  text-align: justify;
+  margin: 20px auto;
+}
+#proExp #proExps .proExps_block-informations #location {
+  text-align: center;
+}
+#proExp #proExps .proExps_block-informations #location i {
+  margin-right: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */
