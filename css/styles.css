@@ -156,7 +156,8 @@ input[type=checkbox]:checked ~ #navigation-bar {
 }
 #home #waves {
   position: absolute;
-  left: 0;
+  left: -50%;
+  top: -10%;
   z-index: -10;
 }
 
