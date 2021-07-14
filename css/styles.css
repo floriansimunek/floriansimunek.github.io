@@ -232,8 +232,12 @@ input[type=checkbox]:checked ~ #navigation-bar {
   background: #0b1e28;
   padding-bottom: 150px;
 }
+#skills .skills-waves {
+  margin-bottom: -5%;
+}
 #skills .skills-waves_down {
   transform: rotate(180deg);
+  margin-top: -5%;
 }
 #skills .skills-list_block {
   background: #0b386b;

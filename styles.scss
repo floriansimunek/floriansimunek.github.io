@@ -269,8 +269,11 @@ input[type="checkbox"] {
 
     .skills {
         &-waves {
+            margin-bottom: -5%;
+
             &_down {
                 transform: rotate(180deg);
+                margin-top: -5%;
             }
         }
 
