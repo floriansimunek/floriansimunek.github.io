@@ -159,6 +159,7 @@ input[type="checkbox"] {
     flex-direction: column;
     justify-content: center;
     position: relative;
+    overflow-x: clip;
 
     #informations {
         #title {
@@ -263,6 +264,8 @@ input[type="checkbox"] {
 
 /* Skills */
 #skills {
+    overflow-x: clip;
+
     &-list {
         background: $black-blue;
         padding-bottom: 150px;
@@ -321,6 +324,7 @@ input[type="checkbox"] {
 /* proExp */
 #proExp {
     position: relative;
+    overflow-x: clip;
 
     &_blob {
         position: absolute;
@@ -357,7 +361,6 @@ input[type="checkbox"] {
                 #title {
                     font-size: 30px;
                     font-weight: bold;
-                    text-align: center;
                 }
 
                 #description {

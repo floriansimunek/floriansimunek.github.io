@@ -143,6 +143,7 @@ input[type=checkbox]:checked ~ #navigation-bar {
   flex-direction: column;
   justify-content: center;
   position: relative;
+  overflow-x: clip;
 }
 #home #informations #title {
   text-align: center;
@@ -229,6 +230,9 @@ input[type=checkbox]:checked ~ #navigation-bar {
 }
 
 /* Skills */
+#skills {
+  overflow-x: clip;
+}
 #skills-list {
   background: #0b1e28;
   padding-bottom: 150px;
@@ -272,6 +276,7 @@ input[type=checkbox]:checked ~ #navigation-bar {
 /* proExp */
 #proExp {
   position: relative;
+  overflow-x: clip;
 }
 #proExp_blob {
   position: absolute;
@@ -302,7 +307,6 @@ input[type=checkbox]:checked ~ #navigation-bar {
 #proExp #proExps .proExps_block-informations #title {
   font-size: 30px;
   font-weight: bold;
-  text-align: center;
 }
 #proExp #proExps .proExps_block-informations #description {
   text-align: justify;
