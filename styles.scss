@@ -7,6 +7,10 @@
     font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
+#firstname {
+    font-weight: bold;
+}
+
 header {
     position: fixed;
     z-index: 5;
@@ -18,10 +22,6 @@ header {
     display: flex;
     align-items: center;
     font-size: 22px;
-
-    #firstname {
-        font-weight: bold;
-    }
 
     #logo {
         display: flex;
@@ -160,10 +160,6 @@ input[type="checkbox"] {
             text-align: center;
             font-size: 64px;
             margin-bottom: 20px;
-
-            #firstname {
-                font-weight: bold;
-            }
         }
 
         #subtitle {
@@ -190,27 +186,72 @@ input[type="checkbox"] {
 
 /* Main */
 #main {
-    margin-top: 20%;
+    margin: 20% auto;
 
     #profile {
-        position: relative;
         text-align: center;
         overflow-x: clip;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-        &_picture {
+        &-picture {
             width: 300px;
             height: 300px;
             border-radius: 50%;
             border: 15px solid $light-blue;
             background: $darker-blue;
+
+            &_block {
+                position: relative;
+            }
         }
 
-        &_blob {
+        &-blob {
             position: absolute;
             z-index: -10;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -45%);
+            transform: translate(-50%, -47%);
+        }
+
+        &-informations {
+            margin-top: 100px;
+            width: 80%;
+
+            #job {
+                color: $light-blue;
+            }
+
+            #title {
+                margin: 10px auto 20px;
+                font-size: 42px;
+            }
+
+            #description {
+                text-align: justify;
+                font-size: 20px;
+            }
+        }
+
+        &-buttons {
+            margin: 30px auto;
+            width: 80%;
+
+            .btn {
+                font-size: 22px;
+                border-radius: 20px;
+                padding: 0.7em 1.5em;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+
+                &-download {
+                    background: $dark-blue;
+                }
+            }
         }
     }
 }
