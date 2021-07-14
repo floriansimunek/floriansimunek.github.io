@@ -39,6 +39,7 @@ body {
 #waves {
   position: absolute;
   left: 0;
+  top: -15%;
   z-index: -10;
   overflow: hidden;
 }
