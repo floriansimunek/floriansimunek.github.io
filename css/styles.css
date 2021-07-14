@@ -14,8 +14,7 @@ header {
   z-index: 5;
   width: 100%;
   height: 75px;
-  background: #ffffff1a;
-  backdrop-filter: blur(50px);
+  background: #096eff;
   color: #fff;
   display: flex;
   align-items: center;
@@ -105,8 +104,7 @@ input[type=checkbox]:checked ~ #navigation-bar {
   top: 75px;
   height: calc(100vh - 75px);
   transition: all 0.3s ease-in-out;
-  background: #ffffff1a;
-  backdrop-filter: blur(50px);
+  background: #096eff;
   z-index: 6;
 }
 #navigation-bar .links-list {
@@ -194,7 +192,7 @@ input[type=checkbox]:checked ~ #navigation-bar {
 }
 #main #profile-informations {
   margin-top: 100px;
-  width: 80%;
+  width: 90%;
 }
 #main #profile-informations #job {
   font-size: 14px;
@@ -202,7 +200,7 @@ input[type=checkbox]:checked ~ #navigation-bar {
 }
 #main #profile-informations #title {
   margin: 10px auto 20px;
-  font-size: 38px;
+  font-size: 42px;
 }
 #main #profile-informations #description {
   text-align: justify;
