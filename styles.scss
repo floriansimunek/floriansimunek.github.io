@@ -500,6 +500,9 @@ input[type="checkbox"] {
     }
 
     &-form {
+        position: relative;
+        z-index: 10;
+
         h3 {
             font-size: 28px;
             text-align: center;
@@ -521,13 +524,13 @@ input[type="checkbox"] {
                 border: none;
                 margin: 10px 0;
                 color: white;
-                background: $blue;
+                background: transparent;
                 border-bottom: 1px solid white;
-                transition: all 0.3s ease-in-out;
                 padding: 5px;
 
                 &:focus {
-                    background: $light-blue;
+                    border: 1px solid #fff;
+                    transition: 0.4s;
                 }
             }
 
@@ -535,13 +538,12 @@ input[type="checkbox"] {
                 border: none;
                 margin: 10px 0;
                 color: white;
-                background: $blue;
+                background: transparent;
                 border-bottom: 1px solid white;
-                transition: all 0.3s ease-in-out;
                 padding: 5px;
 
                 &:focus {
-                    background: $light-blue;
+                    border: 1px solid #fff;
                 }
             }
         }
@@ -574,6 +576,8 @@ input[type="checkbox"] {
         margin: 100px auto;
         padding: 30px 10px;
         border-radius: 20px;
+        position: relative;
+        z-index: 10;
 
         .contact-group {
             display: flex;
@@ -604,6 +608,8 @@ input[type="checkbox"] {
 /* Footer */
 #footer {
     text-align: center;
+    position: relative;
+    z-index: 1;
 
     .separation-line {
         height: 1px;
@@ -616,5 +622,14 @@ input[type="checkbox"] {
         color: #fff;
         margin: 20px 10px;
         font-size: 40px;
+    }
+
+    &-background {
+        svg {
+            position: absolute;
+            bottom: -100%;
+            left: -100%;
+            z-index: -1;
+        }
     }
 }

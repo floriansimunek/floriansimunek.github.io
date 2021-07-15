@@ -413,6 +413,10 @@ input[type=checkbox]:checked ~ #navigation-bar {
 #contact-list {
   background: #0065ff;
 }
+#contact-form {
+  position: relative;
+  z-index: 10;
+}
 #contact-form h3 {
   font-size: 28px;
   text-align: center;
@@ -432,25 +436,24 @@ input[type=checkbox]:checked ~ #navigation-bar {
   border: none;
   margin: 10px 0;
   color: white;
-  background: #0065ff;
+  background: transparent;
   border-bottom: 1px solid white;
-  transition: all 0.3s ease-in-out;
   padding: 5px;
 }
 #contact-form .form-group input:focus {
-  background: #096eff;
+  border: 1px solid #fff;
+  transition: 0.4s;
 }
 #contact-form .form-group textarea {
   border: none;
   margin: 10px 0;
   color: white;
-  background: #0065ff;
+  background: transparent;
   border-bottom: 1px solid white;
-  transition: all 0.3s ease-in-out;
   padding: 5px;
 }
 #contact-form .form-group textarea:focus {
-  background: #096eff;
+  border: 1px solid #fff;
 }
 #contact-form .buttons {
   text-align: center;
@@ -474,6 +477,8 @@ input[type=checkbox]:checked ~ #navigation-bar {
   margin: 100px auto;
   padding: 30px 10px;
   border-radius: 20px;
+  position: relative;
+  z-index: 10;
 }
 #contact-block .contact-group {
   display: flex;
@@ -500,6 +505,8 @@ input[type=checkbox]:checked ~ #navigation-bar {
 /* Footer */
 #footer {
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 #footer .separation-line {
   height: 1px;
@@ -511,6 +518,12 @@ input[type=checkbox]:checked ~ #navigation-bar {
   color: #fff;
   margin: 20px 10px;
   font-size: 40px;
+}
+#footer-background svg {
+  position: absolute;
+  bottom: -100%;
+  left: -100%;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=styles.css.map */
