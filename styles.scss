@@ -77,7 +77,7 @@ textarea {
     position: fixed;
     z-index: 5;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1500px) {
         display: none;
     }
 
@@ -103,7 +103,7 @@ input[type="checkbox"] {
     right: 20px;
     top: 12px;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1500px) {
         display: none;
     }
 
@@ -141,9 +141,34 @@ input[type="checkbox"] {
     z-index: 6;
     text-align: center;
 
+    @media screen and (min-width: 1500px) {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        height: 75px;
+        position: fixed;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+
     .links-list {
         list-style: none;
         margin-top: 20%;
+
+        @media screen and (min-width: 768px) {
+            margin-top: 10%;
+        }
+
+        @media screen and (min-width: 1500px) {
+            margin-top: 0;
+            height: 75px;
+            width: 80%;
+            display: flex;
+            align-items: center;
+        }
 
         a {
             text-decoration: none;
@@ -167,10 +192,29 @@ input[type="checkbox"] {
     .separation-line {
         width: 50%;
         margin: 50px auto;
+
+        @media screen and (min-width: 768px) {
+            width: 30%;
+        }
+
+        @media screen and (min-width: 992px) {
+            width: 20%;
+        }
+
+        @media screen and (min-width: 1500px) {
+            display: none;
+        }
     }
 
     #social-links {
         font-size: 40px;
+
+        @media screen and (min-width: 1500px) {
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
         a {
             margin: 20px 10px;
@@ -187,7 +231,15 @@ input[type="checkbox"] {
         font-size: 22px;
         border-radius: 10px;
         border: 2px solid #fff;
-        padding: 0.5em 2em;
+        padding: 2px 10px;
+
+        @media screen and (min-width: 1500px) {
+            width: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50%;
+        }
     }
 }
 
