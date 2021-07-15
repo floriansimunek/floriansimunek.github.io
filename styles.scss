@@ -600,6 +600,7 @@ input[type="checkbox"] {
                 width: 70%;
                 display: flex;
                 align-items: center;
+                word-break: break-word;
             }
         }
     }
@@ -627,7 +628,7 @@ input[type="checkbox"] {
     &-background {
         svg {
             position: absolute;
-            bottom: -100%;
+            bottom: -130%;
             left: -100%;
             z-index: -1;
         }
