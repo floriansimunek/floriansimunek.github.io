@@ -603,6 +603,11 @@ input[type=checkbox]:checked ~ #navigation-bar {
   width: 90%;
   margin: 0 auto;
 }
+@media screen and (min-width: 1500px) {
+  #formations-list {
+    width: 50%;
+  }
+}
 #formations-list_block {
   margin: 50px 0 50px 20px;
   border-radius: 20px;
@@ -621,6 +626,17 @@ input[type=checkbox]:checked ~ #navigation-bar {
   left: -29px;
   box-sizing: content-box;
   content: "";
+}
+#formations-list_block-background {
+  background: #0065ff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+  border-radius: 21px;
+  transform: rotate(-2deg);
 }
 #formations-list_block #date i {
   margin-right: 5px;
