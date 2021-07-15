@@ -400,6 +400,23 @@ input[type=checkbox]:checked ~ #navigation-bar {
   background: #0b1e28;
   padding-bottom: 150px;
 }
+@media screen and (min-width: 1500px) {
+  #skills-list-line {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+#skills-list-line .icon {
+  color: #0065ff;
+}
+@media screen and (max-width: 1500px) {
+  #skills-list-line .icon {
+    display: none;
+  }
+}
 #skills .skills-waves {
   margin-bottom: -5%;
 }
@@ -468,6 +485,7 @@ input[type=checkbox]:checked ~ #navigation-bar {
   #skills .skills-list_block {
     width: 40%;
     padding: 30px;
+    margin: 50px 0;
   }
 }
 #skills .skills-list_block #title {
@@ -572,7 +590,7 @@ input[type=checkbox]:checked ~ #navigation-bar {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 10px;
+    bottom: 15px;
   }
 }
 #proExp #proExps .proExps_block-informations #location i {

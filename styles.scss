@@ -418,6 +418,24 @@ input[type="checkbox"] {
     &-list {
         background: $black-blue;
         padding-bottom: 150px;
+
+        &-line {
+            @media screen and (min-width: 1500px) {
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .icon {
+                color: $blue;
+
+                @media screen and (max-width: 1500px) {
+                    display: none;
+                }
+            }
+        }
     }
 
     .skills {
@@ -483,6 +501,7 @@ input[type="checkbox"] {
                 @media screen and (min-width: 1500px) {
                     width: 40%;
                     padding: 30px;
+                    margin: 50px 0;
                 }
 
                 #title {
@@ -598,7 +617,7 @@ input[type="checkbox"] {
                         position: absolute;
                         left: 0;
                         right: 0;
-                        bottom: 10px;
+                        bottom: 15px;
                     }
 
                     i {
