@@ -571,7 +571,7 @@ input[type="checkbox"] {
     &-block {
         background: $black-blue;
         width: 90%;
-        margin: 50px auto;
+        margin: 100px auto;
         padding: 30px 10px;
         border-radius: 20px;
 
@@ -598,5 +598,23 @@ input[type="checkbox"] {
                 align-items: center;
             }
         }
+    }
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+
+    .separation-line {
+        height: 1px;
+        width: 70%;
+        background: white;
+        margin: 0 auto;
+    }
+
+    i {
+        color: #fff;
+        margin: 20px 10px;
+        font-size: 40px;
     }
 }

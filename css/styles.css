@@ -471,7 +471,7 @@ input[type=checkbox]:checked ~ #navigation-bar {
 #contact-block {
   background: #0b1e28;
   width: 90%;
-  margin: 50px auto;
+  margin: 100px auto;
   padding: 30px 10px;
   border-radius: 20px;
 }
@@ -495,6 +495,22 @@ input[type=checkbox]:checked ~ #navigation-bar {
   width: 70%;
   display: flex;
   align-items: center;
+}
+
+/* Footer */
+#footer {
+  text-align: center;
+}
+#footer .separation-line {
+  height: 1px;
+  width: 70%;
+  background: white;
+  margin: 0 auto;
+}
+#footer i {
+  color: #fff;
+  margin: 20px 10px;
+  font-size: 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */
