@@ -25,7 +25,7 @@ header {
         width: 55px;
         height: 55px;
         margin: auto 15px;
-        background: $blue;
+        background: $dark-blue;
         color: white;
         font-size: 36px;
         font-weight: bold;
@@ -230,6 +230,14 @@ input[type="checkbox"] {
             margin-top: 100px;
             width: 90%;
 
+            @media screen and (min-width: 768px) {
+                width: 60%;
+            }
+
+            @media screen and (min-width: 992px) {
+                width: 50%;
+            }
+
             #job {
                 font-size: 14px;
                 color: $light-blue;
@@ -249,6 +257,14 @@ input[type="checkbox"] {
         &-buttons {
             margin: 30px auto;
             width: 80%;
+
+            @media screen and (min-width: 768px) {
+                width: 50%;
+            }
+
+            @media screen and (min-width: 992px) {
+                width: 30%;
+            }
 
             .btn {
                 font-size: 22px;
@@ -281,9 +297,22 @@ input[type="checkbox"] {
         &-waves {
             margin-bottom: -5%;
 
+            @media screen and (min-width: 768px) {
+                margin-left: -10%;
+                margin-bottom: -3%;
+                transform: scale(140%);
+            }
+
             &_down {
                 transform: rotate(180deg);
                 margin-top: -5%;
+
+                @media screen and (min-width: 768px) {
+                    margin-left: -10%;
+                    margin-top: -3%;
+                    transform: scale(140%);
+                    transform: rotate(180deg);
+                }
             }
         }
 
@@ -294,6 +323,11 @@ input[type="checkbox"] {
                 margin: 50px auto;
                 padding: 30px 20px;
                 border-radius: 20px;
+
+                @media screen and (min-width: 992px) {
+                    width: 60%;
+                    padding: 30px;
+                }
 
                 #title {
                     font-size: 30px;
@@ -347,6 +381,14 @@ input[type="checkbox"] {
             width: 80%;
             padding: 30px;
             border-radius: 20px;
+
+            @media screen and (min-width: 768px) {
+                width: 60%;
+            }
+
+            @media screen and (min-width: 992px) {
+                width: 50%;
+            }
 
             i.fa-desktop,
             i.fa-file-code,
@@ -459,11 +501,14 @@ input[type="checkbox"] {
 
 /* Portfolio */
 #portfolio {
+    overflow: clip;
+
     .portfolio {
         &-waves {
-            transform: rotate(360deg);
-            transform: scaleX(-1);
-            margin-bottom: -5%;
+            svg {
+                margin-bottom: -5%;
+                transform: scaleX(-1);
+            }
         }
 
         &-list {
@@ -478,6 +523,14 @@ input[type="checkbox"] {
                     border: 10px solid $blue;
                     object-fit: cover;
                     margin: 15px auto;
+
+                    @media screen and (min-width: 768px) {
+                        width: 60%;
+                    }
+
+                    @media screen and (min-width: 992px) {
+                        width: 50%;
+                    }
                 }
             }
         }
@@ -514,6 +567,10 @@ input[type="checkbox"] {
             flex-direction: column;
             width: 90%;
             margin: 10px auto;
+
+            @media screen and (min-width: 768px) {
+                width: 60%;
+            }
 
             #opt {
                 font-size: 12px;
@@ -567,22 +624,39 @@ input[type="checkbox"] {
     .contact {
         &-waves {
             margin-bottom: -5%;
+
+            @media screen and (min-width: 768px) {
+                margin-left: -10%;
+                margin-bottom: -3%;
+                transform: scale(140%);
+            }
         }
     }
 
     &-block {
         background: $black-blue;
-        width: 90%;
         margin: 100px auto;
         padding: 30px 10px;
         border-radius: 20px;
         position: relative;
         z-index: 10;
 
+        @media screen and (min-width: 600px) {
+            width: 70%;
+        }
+
+        @media screen and (max-width: 600px) {
+            width: 90%;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 60%;
+        }
+
         .contact-group {
             display: flex;
             justify-content: space-around;
-            font-size: 20px;
+            font-size: 18px;
             margin: 30px auto;
 
             i {
@@ -631,6 +705,10 @@ input[type="checkbox"] {
             bottom: -130%;
             left: -100%;
             z-index: -1;
+
+            @media screen and (min-width: 768px) {
+                left: -50%;
+            }
         }
     }
 }

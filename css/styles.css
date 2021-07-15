@@ -24,7 +24,7 @@ header #logo {
   width: 55px;
   height: 55px;
   margin: auto 15px;
-  background: #0065ff;
+  background: #0b386b;
   color: white;
   font-size: 36px;
   font-weight: bold;
@@ -207,6 +207,16 @@ input[type=checkbox]:checked ~ #navigation-bar {
   margin-top: 100px;
   width: 90%;
 }
+@media screen and (min-width: 768px) {
+  #main #profile-informations {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 992px) {
+  #main #profile-informations {
+    width: 50%;
+  }
+}
 #main #profile-informations #job {
   font-size: 14px;
   color: #096eff;
@@ -222,6 +232,16 @@ input[type=checkbox]:checked ~ #navigation-bar {
 #main #profile-buttons {
   margin: 30px auto;
   width: 80%;
+}
+@media screen and (min-width: 768px) {
+  #main #profile-buttons {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  #main #profile-buttons {
+    width: 30%;
+  }
 }
 #main #profile-buttons .btn {
   font-size: 22px;
@@ -247,9 +267,24 @@ input[type=checkbox]:checked ~ #navigation-bar {
 #skills .skills-waves {
   margin-bottom: -5%;
 }
+@media screen and (min-width: 768px) {
+  #skills .skills-waves {
+    margin-left: -10%;
+    margin-bottom: -3%;
+    transform: scale(140%);
+  }
+}
 #skills .skills-waves_down {
   transform: rotate(180deg);
   margin-top: -5%;
+}
+@media screen and (min-width: 768px) {
+  #skills .skills-waves_down {
+    margin-left: -10%;
+    margin-top: -3%;
+    transform: scale(140%);
+    transform: rotate(180deg);
+  }
 }
 #skills .skills-list_block {
   background: #0b386b;
@@ -257,6 +292,12 @@ input[type=checkbox]:checked ~ #navigation-bar {
   margin: 50px auto;
   padding: 30px 20px;
   border-radius: 20px;
+}
+@media screen and (min-width: 992px) {
+  #skills .skills-list_block {
+    width: 60%;
+    padding: 30px;
+  }
 }
 #skills .skills-list_block #title {
   font-size: 30px;
@@ -298,6 +339,16 @@ input[type=checkbox]:checked ~ #navigation-bar {
   width: 80%;
   padding: 30px;
   border-radius: 20px;
+}
+@media screen and (min-width: 768px) {
+  #proExp #proExps .proExps_block {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 992px) {
+  #proExp #proExps .proExps_block {
+    width: 50%;
+  }
 }
 #proExp #proExps .proExps_block i.fa-desktop,
 #proExp #proExps .proExps_block i.fa-file-code,
@@ -382,10 +433,12 @@ input[type=checkbox]:checked ~ #navigation-bar {
 }
 
 /* Portfolio */
-#portfolio .portfolio-waves {
-  transform: rotate(360deg);
-  transform: scaleX(-1);
+#portfolio {
+  overflow: clip;
+}
+#portfolio .portfolio-waves svg {
   margin-bottom: -5%;
+  transform: scaleX(-1);
 }
 #portfolio .portfolio-list_block {
   width: 100%;
@@ -398,6 +451,16 @@ input[type=checkbox]:checked ~ #navigation-bar {
   border: 10px solid #0065ff;
   object-fit: cover;
   margin: 15px auto;
+}
+@media screen and (min-width: 768px) {
+  #portfolio .portfolio-list_block img {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 992px) {
+  #portfolio .portfolio-list_block img {
+    width: 50%;
+  }
 }
 #portfolio-list {
   background: #0b1e28;
@@ -427,6 +490,11 @@ input[type=checkbox]:checked ~ #navigation-bar {
   flex-direction: column;
   width: 90%;
   margin: 10px auto;
+}
+@media screen and (min-width: 768px) {
+  #contact-form .form-group {
+    width: 60%;
+  }
 }
 #contact-form .form-group #opt {
   font-size: 12px;
@@ -471,19 +539,40 @@ input[type=checkbox]:checked ~ #navigation-bar {
 #contact .contact-waves {
   margin-bottom: -5%;
 }
+@media screen and (min-width: 768px) {
+  #contact .contact-waves {
+    margin-left: -10%;
+    margin-bottom: -3%;
+    transform: scale(140%);
+  }
+}
 #contact-block {
   background: #0b1e28;
-  width: 90%;
   margin: 100px auto;
   padding: 30px 10px;
   border-radius: 20px;
   position: relative;
   z-index: 10;
 }
+@media screen and (min-width: 600px) {
+  #contact-block {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #contact-block {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #contact-block {
+    width: 60%;
+  }
+}
 #contact-block .contact-group {
   display: flex;
   justify-content: space-around;
-  font-size: 20px;
+  font-size: 18px;
   margin: 30px auto;
 }
 #contact-block .contact-group i {
@@ -525,6 +614,11 @@ input[type=checkbox]:checked ~ #navigation-bar {
   bottom: -130%;
   left: -100%;
   z-index: -1;
+}
+@media screen and (min-width: 768px) {
+  #footer-background svg {
+    left: -50%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
