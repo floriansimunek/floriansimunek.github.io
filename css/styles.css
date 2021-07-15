@@ -255,7 +255,7 @@ input[type=checkbox]:checked ~ #navigation-bar {
   background: #0b386b;
   width: 80%;
   margin: 50px auto;
-  padding: 30px;
+  padding: 30px 20px;
   border-radius: 20px;
 }
 #skills .skills-list_block #title {
