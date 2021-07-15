@@ -48,6 +48,11 @@ h2 {
   margin-bottom: 100px;
 }
 
+input,
+textarea {
+  outline: none;
+}
+
 /* Burger-Menu */
 .burger-menu {
   width: 50px;
@@ -396,7 +401,69 @@ input[type=checkbox]:checked ~ #navigation-bar {
 }
 #portfolio-list {
   background: #0b1e28;
-  padding-bottom: 150px;
+  padding-bottom: 250px;
+}
+
+/* Contact */
+#contact {
+  margin-top: -250px;
+  position: relative;
+  overflow: clip;
+}
+#contact-list {
+  background: #0065ff;
+}
+#contact-form h3 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#contact-form .buttons {
+  text-align: center;
+}
+#contact-form input[type=button] {
+  border-radius: 10px;
+  border: none;
+  margin: 50px auto;
+  padding: 0.7em 2.5em;
+  font-size: 18px;
+  background: #0b386b;
+  color: #fff;
+  font-weight: bold;
+}
+#contact .form-group {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 10px auto;
+}
+#contact .form-group input {
+  height: 3vh;
+  border: none;
+  margin: 10px 0;
+  color: white;
+  background: #0065ff;
+  border-bottom: 1px solid white;
+  transition: all 0.3s ease-in-out;
+  padding: 5px;
+}
+#contact .form-group input:focus {
+  background: #096eff;
+}
+#contact .form-group textarea {
+  border: none;
+  margin: 10px 0;
+  color: white;
+  background: #0065ff;
+  border-bottom: 1px solid white;
+  transition: all 0.3s ease-in-out;
+  padding: 5px;
+}
+#contact .form-group textarea:focus {
+  background: #096eff;
+}
+#contact .contact-waves {
+  margin-bottom: -5%;
 }
 
 /*# sourceMappingURL=styles.css.map */
