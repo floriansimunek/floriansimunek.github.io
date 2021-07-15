@@ -67,7 +67,7 @@ textarea {
   position: fixed;
   z-index: 5;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .burger-menu {
     display: none;
   }
@@ -91,7 +91,7 @@ input[type=checkbox] {
   right: 20px;
   top: 12px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   input[type=checkbox] {
     display: none;
   }
@@ -166,6 +166,19 @@ input[type=checkbox]:checked ~ #navigation-bar {
   top: -10%;
   z-index: -10;
 }
+@media screen and (min-width: 1200px) {
+  #home #waves {
+    top: 0;
+    left: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #home #waves {
+    top: 0;
+    left: 0;
+    transform: scale(130%);
+  }
+}
 
 #discover-button {
   text-align: center;
@@ -215,6 +228,11 @@ input[type=checkbox]:checked ~ #navigation-bar {
 @media screen and (min-width: 992px) {
   #main #profile-informations {
     width: 50%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  #main #profile-informations {
+    width: 40%;
   }
 }
 #main #profile-informations #job {
@@ -274,16 +292,33 @@ input[type=checkbox]:checked ~ #navigation-bar {
     transform: scale(140%);
   }
 }
+@media screen and (min-width: 1000px) {
+  #skills .skills-waves {
+    margin-left: 10%;
+    margin-bottom: 5%;
+    transform: scale(200%);
+  }
+}
+@media screen and (min-width: 992px) {
+  #skills .skills-waves {
+    margin-left: 20%;
+  }
+}
 #skills .skills-waves_down {
   transform: rotate(180deg);
   margin-top: -5%;
 }
 @media screen and (min-width: 768px) {
   #skills .skills-waves_down {
-    margin-left: -10%;
     margin-top: -3%;
-    transform: scale(140%);
-    transform: rotate(180deg);
+    transform: scale(140%) rotate(180deg);
+  }
+}
+@media screen and (min-width: 1000px) {
+  #skills .skills-waves_down {
+    margin-top: 5%;
+    transform: scale(200%) rotate(180deg);
+    margin-left: 50%;
   }
 }
 #skills .skills-list_block {
@@ -440,6 +475,14 @@ input[type=checkbox]:checked ~ #navigation-bar {
   margin-bottom: -5%;
   transform: scaleX(-1);
 }
+@media screen and (min-width: 1000px) {
+  #portfolio .portfolio-waves svg {
+    margin-top: 15%;
+    margin-bottom: 5%;
+    margin-left: 40%;
+    transform: scale(250%);
+  }
+}
 #portfolio .portfolio-list_block {
   width: 100%;
   text-align: center;
@@ -460,6 +503,11 @@ input[type=checkbox]:checked ~ #navigation-bar {
 @media screen and (min-width: 992px) {
   #portfolio .portfolio-list_block img {
     width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  #portfolio .portfolio-list_block img {
+    width: 40%;
   }
 }
 #portfolio-list {
@@ -546,6 +594,20 @@ input[type=checkbox]:checked ~ #navigation-bar {
     transform: scale(140%);
   }
 }
+@media screen and (min-width: 1000px) {
+  #contact .contact-waves {
+    margin-bottom: 5%;
+    margin-left: 0%;
+    transform: scale(200%);
+  }
+}
+@media screen and (min-width: 1000px) {
+  #contact .contact-waves {
+    margin-bottom: 5%;
+    margin-left: 20%;
+    transform: scale(200%);
+  }
+}
 #contact-block {
   background: #0b1e28;
   margin: 100px auto;
@@ -567,6 +629,11 @@ input[type=checkbox]:checked ~ #navigation-bar {
 @media screen and (min-width: 768px) {
   #contact-block {
     width: 60%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #contact-block {
+    width: 40%;
   }
 }
 #contact-block .contact-group {
@@ -618,6 +685,12 @@ input[type=checkbox]:checked ~ #navigation-bar {
 @media screen and (min-width: 768px) {
   #footer-background svg {
     left: -50%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  #footer-background svg {
+    left: -20%;
+    bottom: -200%;
   }
 }
 

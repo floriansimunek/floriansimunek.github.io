@@ -70,7 +70,7 @@ textarea {
     position: fixed;
     z-index: 5;
 
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 1200px) {
         display: none;
     }
 
@@ -96,7 +96,7 @@ input[type="checkbox"] {
     right: 20px;
     top: 12px;
 
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 1200px) {
         display: none;
     }
 
@@ -184,6 +184,17 @@ input[type="checkbox"] {
         left: -50%;
         top: -10%;
         z-index: -10;
+
+        @media screen and (min-width: 1200px) {
+            top: 0;
+            left: 0;
+        }
+
+        @media screen and (min-width: 1200px) {
+            top: 0;
+            left: 0;
+            transform: scale(130%);
+        }
     }
 }
 
@@ -236,6 +247,10 @@ input[type="checkbox"] {
 
             @media screen and (min-width: 992px) {
                 width: 50%;
+            }
+
+            @media screen and (min-width: 1300px) {
+                width: 40%;
             }
 
             #job {
@@ -303,15 +318,29 @@ input[type="checkbox"] {
                 transform: scale(140%);
             }
 
+            @media screen and (min-width: 1000px) {
+                margin-left: 10%;
+                margin-bottom: 5%;
+                transform: scale(200%);
+            }
+
+            @media screen and (min-width: 992px) {
+                margin-left: 20%;
+            }
+
             &_down {
                 transform: rotate(180deg);
                 margin-top: -5%;
 
                 @media screen and (min-width: 768px) {
-                    margin-left: -10%;
                     margin-top: -3%;
-                    transform: scale(140%);
-                    transform: rotate(180deg);
+                    transform: scale(140%) rotate(180deg);
+                }
+
+                @media screen and (min-width: 1000px) {
+                    margin-top: 5%;
+                    transform: scale(200%) rotate(180deg);
+                    margin-left: 50%;
                 }
             }
         }
@@ -508,6 +537,13 @@ input[type="checkbox"] {
             svg {
                 margin-bottom: -5%;
                 transform: scaleX(-1);
+
+                @media screen and (min-width: 1000px) {
+                    margin-top: 15%;
+                    margin-bottom: 5%;
+                    margin-left: 40%;
+                    transform: scale(250%);
+                }
             }
         }
 
@@ -530,6 +566,10 @@ input[type="checkbox"] {
 
                     @media screen and (min-width: 992px) {
                         width: 50%;
+                    }
+
+                    @media screen and (min-width: 992px) {
+                        width: 40%;
                     }
                 }
             }
@@ -630,6 +670,18 @@ input[type="checkbox"] {
                 margin-bottom: -3%;
                 transform: scale(140%);
             }
+
+            @media screen and (min-width: 1000px) {
+                margin-bottom: 5%;
+                margin-left: 0%;
+                transform: scale(200%);
+            }
+
+            @media screen and (min-width: 1000px) {
+                margin-bottom: 5%;
+                margin-left: 20%;
+                transform: scale(200%);
+            }
         }
     }
 
@@ -651,6 +703,10 @@ input[type="checkbox"] {
 
         @media screen and (min-width: 768px) {
             width: 60%;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 40%;
         }
 
         .contact-group {
@@ -708,6 +764,11 @@ input[type="checkbox"] {
 
             @media screen and (min-width: 768px) {
                 left: -50%;
+            }
+
+            @media screen and (min-width: 1300px) {
+                left: -20%;
+                bottom: -200%;
             }
         }
     }
