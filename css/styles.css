@@ -545,6 +545,13 @@ input[type=checkbox]:checked ~ #navigation-bar {
   padding: 30px;
   border-radius: 20px;
   position: relative;
+  transition: all 0.3s ease-in-out;
+}
+#proExp #proExps .proExps_block:hover {
+  background: #096eff;
+}
+#proExp #proExps .proExps_block:hover i.fa-desktop, #proExp #proExps .proExps_block:hover i.fa-file-code, #proExp #proExps .proExps_block:hover i.fa-search {
+  color: #0b1e28;
 }
 @media screen and (min-width: 768px) {
   #proExp #proExps .proExps_block {
@@ -627,6 +634,10 @@ input[type=checkbox]:checked ~ #navigation-bar {
   box-sizing: content-box;
   content: "";
 }
+#formations-list_block:hover #formations-list_block-background {
+  background: #096eff;
+  transform: rotate(-4deg);
+}
 #formations-list_block-background {
   background: #0065ff;
   position: absolute;
@@ -637,6 +648,7 @@ input[type=checkbox]:checked ~ #navigation-bar {
   z-index: -10;
   border-radius: 21px;
   transform: rotate(-2deg);
+  transition: all 0.3s ease-in-out;
 }
 #formations-list_block #date i {
   margin-right: 5px;
@@ -682,6 +694,12 @@ input[type=checkbox]:checked ~ #navigation-bar {
     margin-bottom: 5%;
     margin-left: 40%;
     transform: scale(250%);
+  }
+}
+@media screen and (min-width: 1500px) {
+  #portfolio .portfolio-waves svg {
+    margin-top: 15%;
+    margin-left: 70%;
   }
 }
 #portfolio .portfolio-list_block {
@@ -743,6 +761,11 @@ input[type=checkbox]:checked ~ #navigation-bar {
 @media screen and (min-width: 768px) {
   #contact-form .form-group {
     width: 60%;
+  }
+}
+@media screen and (min-width: 1500px) {
+  #contact-form .form-group {
+    width: 30%;
   }
 }
 #contact-form .form-group #opt {
@@ -809,6 +832,13 @@ input[type=checkbox]:checked ~ #navigation-bar {
     transform: scale(200%);
   }
 }
+@media screen and (min-width: 1500px) {
+  #contact .contact-waves {
+    margin-bottom: 5%;
+    margin-left: 40%;
+    transform: scale(260%);
+  }
+}
 #contact-block {
   background: #0b1e28;
   margin: 100px auto;
@@ -835,6 +865,11 @@ input[type=checkbox]:checked ~ #navigation-bar {
 @media screen and (min-width: 768px) {
   #contact-block {
     width: 40%;
+  }
+}
+@media screen and (min-width: 1500px) {
+  #contact-block {
+    width: 30%;
   }
 }
 #contact-block .contact-group {

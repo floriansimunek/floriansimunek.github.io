@@ -570,6 +570,17 @@ input[type="checkbox"] {
             padding: 30px;
             border-radius: 20px;
             position: relative;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background: $light-blue;
+            }
+
+            &:hover i.fa-desktop,
+            &:hover i.fa-file-code,
+            &:hover i.fa-search {
+                color: $black-blue;
+            }
 
             @media screen and (min-width: 768px) {
                 width: 60%;
@@ -660,6 +671,11 @@ input[type="checkbox"] {
                 content: "";
             }
 
+            &:hover &-background {
+                background: $light-blue;
+                transform: rotate(-4deg);
+            }
+
             &-background {
                 background: $blue;
                 position: absolute;
@@ -670,6 +686,7 @@ input[type="checkbox"] {
                 z-index: -10;
                 border-radius: 21px;
                 transform: rotate(-2deg);
+                transition: all 0.3s ease-in-out;
             }
 
             #date {
@@ -731,6 +748,11 @@ input[type="checkbox"] {
                     margin-bottom: 5%;
                     margin-left: 40%;
                     transform: scale(250%);
+                }
+
+                @media screen and (min-width: 1500px) {
+                    margin-top: 15%;
+                    margin-left: 70%;
                 }
             }
         }
@@ -798,6 +820,10 @@ input[type="checkbox"] {
 
             @media screen and (min-width: 768px) {
                 width: 60%;
+            }
+
+            @media screen and (min-width: 1500px) {
+                width: 30%;
             }
 
             #opt {
@@ -870,6 +896,12 @@ input[type="checkbox"] {
                 margin-left: 20%;
                 transform: scale(200%);
             }
+
+            @media screen and (min-width: 1500px) {
+                margin-bottom: 5%;
+                margin-left: 40%;
+                transform: scale(260%);
+            }
         }
     }
 
@@ -895,6 +927,10 @@ input[type="checkbox"] {
 
         @media screen and (min-width: 768px) {
             width: 40%;
+        }
+
+        @media screen and (min-width: 1500px) {
+            width: 30%;
         }
 
         .contact-group {
