@@ -235,7 +235,6 @@ input[type=checkbox]:checked ~ #navigation-bar {
 /* Home */
 #home {
   height: 100vh;
-  margin-bottom: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -282,6 +281,11 @@ input[type=checkbox]:checked ~ #navigation-bar {
 /* Main */
 #main {
   margin: 20% auto;
+}
+@media screen and (min-width: 1500px) {
+  #main {
+    margin: 5% auto;
+  }
 }
 #main #profile {
   text-align: center;

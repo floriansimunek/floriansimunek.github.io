@@ -247,7 +247,6 @@ input[type="checkbox"] {
 /* Home */
 #home {
     height: 100vh;
-    margin-bottom: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -297,6 +296,10 @@ input[type="checkbox"] {
 /* Main */
 #main {
     margin: 20% auto;
+
+    @media screen and (min-width: 1500px) {
+        margin: 5% auto;
+    }
 
     #profile {
         text-align: center;
