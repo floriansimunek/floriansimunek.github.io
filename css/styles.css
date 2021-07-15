@@ -376,4 +376,27 @@ input[type=checkbox]:checked ~ #navigation-bar {
   margin: 10px auto;
 }
 
+/* Portfolio */
+#portfolio .portfolio-waves {
+  transform: rotate(360deg);
+  transform: scaleX(-1);
+  margin-bottom: -5%;
+}
+#portfolio .portfolio-list_block {
+  width: 100%;
+  text-align: center;
+}
+#portfolio .portfolio-list_block img {
+  width: 90%;
+  height: 250px;
+  border-radius: 20px;
+  border: 10px solid #0065ff;
+  object-fit: cover;
+  margin: 15px auto;
+}
+#portfolio-list {
+  background: #0b1e28;
+  padding-bottom: 150px;
+}
+
 /*# sourceMappingURL=styles.css.map */
