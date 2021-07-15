@@ -239,6 +239,7 @@ input[type="checkbox"] {
             align-items: center;
             justify-content: center;
             height: 50%;
+            border: 3px solid #fff;
         }
     }
 }
@@ -304,6 +305,13 @@ input[type="checkbox"] {
         flex-direction: column;
         align-items: center;
 
+        @media screen and (min-width: 1500px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
         &-picture {
             width: 300px;
             height: 300px;
@@ -313,6 +321,10 @@ input[type="checkbox"] {
 
             &_block {
                 position: relative;
+
+                @media screen and (min-width: 1500px) {
+                    margin-right: 10%;
+                }
             }
         }
 
@@ -340,6 +352,10 @@ input[type="checkbox"] {
                 width: 40%;
             }
 
+            @media screen and (min-width: 1500px) {
+                width: 20%;
+            }
+
             #job {
                 font-size: 14px;
                 color: $light-blue;
@@ -358,20 +374,21 @@ input[type="checkbox"] {
 
         &-buttons {
             margin: 30px auto;
-            width: 80%;
+            width: 100%;
 
             @media screen and (min-width: 768px) {
-                width: 50%;
+                width: 90%;
             }
 
             @media screen and (min-width: 992px) {
-                width: 30%;
+                width: 70%;
             }
 
             .btn {
                 font-size: 22px;
                 border-radius: 20px;
                 padding: 0.7em 1.5em;
+                margin: 15px auto;
 
                 a {
                     text-decoration: none;
@@ -380,6 +397,14 @@ input[type="checkbox"] {
 
                 &-download {
                     background: $dark-blue;
+                }
+
+                &-look {
+                    background: $blue;
+
+                    @media screen and (max-width: 1200px) {
+                        display: none;
+                    }
                 }
             }
         }
@@ -415,6 +440,11 @@ input[type="checkbox"] {
                 margin-left: 20%;
             }
 
+            @media screen and (min-width: 1500px) {
+                margin-left: 40%;
+                transform: scale(300%);
+            }
+
             &_down {
                 transform: rotate(180deg);
                 margin-top: -5%;
@@ -429,6 +459,11 @@ input[type="checkbox"] {
                     transform: scale(200%) rotate(180deg);
                     margin-left: 50%;
                 }
+
+                @media screen and (min-width: 1500px) {
+                    margin-left: 70%;
+                    transform: scale(300%) rotate(180deg);
+                }
             }
         }
 
@@ -442,6 +477,11 @@ input[type="checkbox"] {
 
                 @media screen and (min-width: 992px) {
                     width: 60%;
+                    padding: 30px;
+                }
+
+                @media screen and (min-width: 1500px) {
+                    width: 40%;
                     padding: 30px;
                 }
 
@@ -482,21 +522,35 @@ input[type="checkbox"] {
     position: relative;
     overflow-x: clip;
 
+    @media screen and (min-width: 1500px) {
+        margin: 200px auto;
+    }
+
     &_blob {
         position: absolute;
         z-index: -10;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -40%);
+
+        @media screen and (min-width: 1500px) {
+            transform: scale(70%) translate(-70%, -60%);
+        }
     }
 
     #proExps {
+        @media screen and (min-width: 1500px) {
+            display: flex;
+            justify-content: center;
+        }
+
         .proExps_block {
             margin: 50px auto;
             background: $black-blue;
             width: 80%;
             padding: 30px;
             border-radius: 20px;
+            position: relative;
 
             @media screen and (min-width: 768px) {
                 width: 60%;
@@ -504,6 +558,11 @@ input[type="checkbox"] {
 
             @media screen and (min-width: 992px) {
                 width: 50%;
+            }
+
+            @media screen and (min-width: 1500px) {
+                width: 20%;
+                margin: 50px 20px;
             }
 
             i.fa-desktop,
@@ -534,6 +593,13 @@ input[type="checkbox"] {
 
                 #location {
                     text-align: center;
+
+                    @media screen and (min-width: 1500px) {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 10px;
+                    }
 
                     i {
                         margin-right: 5px;

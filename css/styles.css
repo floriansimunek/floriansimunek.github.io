@@ -228,6 +228,7 @@ input[type=checkbox]:checked ~ #navigation-bar {
     align-items: center;
     justify-content: center;
     height: 50%;
+    border: 3px solid #fff;
   }
 }
 
@@ -289,6 +290,14 @@ input[type=checkbox]:checked ~ #navigation-bar {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 1500px) {
+  #main #profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
 #main #profile-picture {
   width: 300px;
   height: 300px;
@@ -298,6 +307,11 @@ input[type=checkbox]:checked ~ #navigation-bar {
 }
 #main #profile-picture_block {
   position: relative;
+}
+@media screen and (min-width: 1500px) {
+  #main #profile-picture_block {
+    margin-right: 10%;
+  }
 }
 #main #profile-blob {
   position: absolute;
@@ -325,6 +339,11 @@ input[type=checkbox]:checked ~ #navigation-bar {
     width: 40%;
   }
 }
+@media screen and (min-width: 1500px) {
+  #main #profile-informations {
+    width: 20%;
+  }
+}
 #main #profile-informations #job {
   font-size: 14px;
   color: #096eff;
@@ -339,22 +358,23 @@ input[type=checkbox]:checked ~ #navigation-bar {
 }
 #main #profile-buttons {
   margin: 30px auto;
-  width: 80%;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   #main #profile-buttons {
-    width: 50%;
+    width: 90%;
   }
 }
 @media screen and (min-width: 992px) {
   #main #profile-buttons {
-    width: 30%;
+    width: 70%;
   }
 }
 #main #profile-buttons .btn {
   font-size: 22px;
   border-radius: 20px;
   padding: 0.7em 1.5em;
+  margin: 15px auto;
 }
 #main #profile-buttons .btn a {
   text-decoration: none;
@@ -362,6 +382,14 @@ input[type=checkbox]:checked ~ #navigation-bar {
 }
 #main #profile-buttons .btn-download {
   background: #0b386b;
+}
+#main #profile-buttons .btn-look {
+  background: #0065ff;
+}
+@media screen and (max-width: 1200px) {
+  #main #profile-buttons .btn-look {
+    display: none;
+  }
 }
 
 /* Skills */
@@ -394,6 +422,12 @@ input[type=checkbox]:checked ~ #navigation-bar {
     margin-left: 20%;
   }
 }
+@media screen and (min-width: 1500px) {
+  #skills .skills-waves {
+    margin-left: 40%;
+    transform: scale(300%);
+  }
+}
 #skills .skills-waves_down {
   transform: rotate(180deg);
   margin-top: -5%;
@@ -411,6 +445,12 @@ input[type=checkbox]:checked ~ #navigation-bar {
     margin-left: 50%;
   }
 }
+@media screen and (min-width: 1500px) {
+  #skills .skills-waves_down {
+    margin-left: 70%;
+    transform: scale(300%) rotate(180deg);
+  }
+}
 #skills .skills-list_block {
   background: #0b386b;
   width: 80%;
@@ -421,6 +461,12 @@ input[type=checkbox]:checked ~ #navigation-bar {
 @media screen and (min-width: 992px) {
   #skills .skills-list_block {
     width: 60%;
+    padding: 30px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  #skills .skills-list_block {
+    width: 40%;
     padding: 30px;
   }
 }
@@ -451,6 +497,11 @@ input[type=checkbox]:checked ~ #navigation-bar {
   position: relative;
   overflow-x: clip;
 }
+@media screen and (min-width: 1500px) {
+  #proExp {
+    margin: 200px auto;
+  }
+}
 #proExp_blob {
   position: absolute;
   z-index: -10;
@@ -458,12 +509,24 @@ input[type=checkbox]:checked ~ #navigation-bar {
   left: 50%;
   transform: translate(-50%, -40%);
 }
+@media screen and (min-width: 1500px) {
+  #proExp_blob {
+    transform: scale(70%) translate(-70%, -60%);
+  }
+}
+@media screen and (min-width: 1500px) {
+  #proExp #proExps {
+    display: flex;
+    justify-content: center;
+  }
+}
 #proExp #proExps .proExps_block {
   margin: 50px auto;
   background: #0b1e28;
   width: 80%;
   padding: 30px;
   border-radius: 20px;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   #proExp #proExps .proExps_block {
@@ -473,6 +536,12 @@ input[type=checkbox]:checked ~ #navigation-bar {
 @media screen and (min-width: 992px) {
   #proExp #proExps .proExps_block {
     width: 50%;
+  }
+}
+@media screen and (min-width: 1500px) {
+  #proExp #proExps .proExps_block {
+    width: 20%;
+    margin: 50px 20px;
   }
 }
 #proExp #proExps .proExps_block i.fa-desktop,
@@ -497,6 +566,14 @@ input[type=checkbox]:checked ~ #navigation-bar {
 }
 #proExp #proExps .proExps_block-informations #location {
   text-align: center;
+}
+@media screen and (min-width: 1500px) {
+  #proExp #proExps .proExps_block-informations #location {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+  }
 }
 #proExp #proExps .proExps_block-informations #location i {
   margin-right: 5px;
