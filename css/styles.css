@@ -418,6 +418,40 @@ input[type=checkbox]:checked ~ #navigation-bar {
   text-align: center;
   margin-bottom: 50px;
 }
+#contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 10px auto;
+}
+#contact-form .form-group #opt {
+  font-size: 12px;
+}
+#contact-form .form-group input {
+  height: 3vh;
+  border: none;
+  margin: 10px 0;
+  color: white;
+  background: #0065ff;
+  border-bottom: 1px solid white;
+  transition: all 0.3s ease-in-out;
+  padding: 5px;
+}
+#contact-form .form-group input:focus {
+  background: #096eff;
+}
+#contact-form .form-group textarea {
+  border: none;
+  margin: 10px 0;
+  color: white;
+  background: #0065ff;
+  border-bottom: 1px solid white;
+  transition: all 0.3s ease-in-out;
+  padding: 5px;
+}
+#contact-form .form-group textarea:focus {
+  background: #096eff;
+}
 #contact-form .buttons {
   text-align: center;
 }
@@ -431,39 +465,36 @@ input[type=checkbox]:checked ~ #navigation-bar {
   color: #fff;
   font-weight: bold;
 }
-#contact .form-group {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  margin: 10px auto;
-}
-#contact .form-group input {
-  height: 3vh;
-  border: none;
-  margin: 10px 0;
-  color: white;
-  background: #0065ff;
-  border-bottom: 1px solid white;
-  transition: all 0.3s ease-in-out;
-  padding: 5px;
-}
-#contact .form-group input:focus {
-  background: #096eff;
-}
-#contact .form-group textarea {
-  border: none;
-  margin: 10px 0;
-  color: white;
-  background: #0065ff;
-  border-bottom: 1px solid white;
-  transition: all 0.3s ease-in-out;
-  padding: 5px;
-}
-#contact .form-group textarea:focus {
-  background: #096eff;
-}
 #contact .contact-waves {
   margin-bottom: -5%;
+}
+#contact-block {
+  background: #0b1e28;
+  width: 90%;
+  margin: 50px auto;
+  padding: 30px 10px;
+  border-radius: 20px;
+}
+#contact-block .contact-group {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  margin: 30px auto;
+}
+#contact-block .contact-group i {
+  color: #0065ff;
+  background: #0b386b;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact-block .contact-group p {
+  width: 70%;
+  display: flex;
+  align-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
