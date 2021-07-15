@@ -30,6 +30,11 @@ header {
         font-size: 36px;
         font-weight: bold;
         border-radius: 0px 10px 10px 10px;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
     }
 }
 
@@ -740,6 +745,27 @@ input[type="checkbox"] {
 #portfolio {
     overflow: clip;
 
+    &-list {
+        background: $black-blue;
+        padding-bottom: 250px;
+
+        &_blocks {
+            @media screen and (min-width: 1500px) {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            .row {
+                @media screen and (min-width: 1500px) {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+
     .portfolio {
         &-waves {
             svg {
@@ -784,14 +810,13 @@ input[type="checkbox"] {
                     @media screen and (min-width: 992px) {
                         width: 40%;
                     }
+
+                    @media screen and (min-width: 1500px) {
+                        width: 70%;
+                    }
                 }
             }
         }
-    }
-
-    &-list {
-        background: $black-blue;
-        padding-bottom: 250px;
     }
 }
 

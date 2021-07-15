@@ -14,13 +14,14 @@
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
         <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <!-- Smooth Scrolling -->
-        <script></script>
+        <script src="js/smooth-scrolling.js" defer></script>
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".links-list" data-offset="500">
         <!-- Header -->
         <header>
-            <div id="logo">F</div>
+            <a href="#home"><div id="logo">F</div></a>
             <div><span id="firstname">Florian</span> SIMUNEK</div>
         </header>
 
@@ -33,11 +34,11 @@
 
         <div id="navigation-bar">
             <ul class="links-list">
-                <li class="links-list-link"><a href="#">A propos</a></li>
-                <li class="links-list-link"><a href="#">Compétences</a></li>
-                <li class="links-list-link"><a href="#">Expériences</a></li>
-                <li class="links-list-link"><a href="#">Formations</a></li>
-                <li class="links-list-link"><a href="#">Portfolio</a></li>
+                <li class="links-list-link"><a href="#main">A propos</a></li>
+                <li class="links-list-link"><a href="#skills">Compétences</a></li>
+                <li class="links-list-link"><a href="#proExp">Expériences</a></li>
+                <li class="links-list-link"><a href="#formations">Formations</a></li>
+                <li class="links-list-link"><a href="#portfolio">Portfolio</a></li>
             </ul>
             <div class="separation-line"></div>
             <div id="social-links">
@@ -46,7 +47,7 @@
                 <a href="https://github.com/floriansimunek" target="_blank" class="mx-2"><i class="fab fa-github"></i></a>
             </div>
             <div class="separation-line"></div>
-            <a id="contact-link" href="#">Contact</a>
+            <a id="contact-link" href="#contact">Contact</a>
         </div>
 
         <!-- Home -->
@@ -326,15 +327,19 @@
             </div>
             <div id="portfolio-list">
                 <h2>Portfolio</h2>
-                <!-- TODO: Overlay + add projects sources -->
-                <div class="portfolio-list_block">
-                    <img src="images/projects/travel-agency.png" alt="HTML-CSS Travel Agency" />
-                </div>
-                <div class="portfolio-list_block">
-                    <img src="images/projects/snake-js.png" alt="Snake en Javascript" />
-                </div>
-                <div class="portfolio-list_block">
-                    <img src="images/projects/cv-maquette.png" alt="CV HTML-CSS Maquette" />
+                <div id="portfolio-list_blocks">
+                    <!-- TODO: Overlay + add projects sources -->
+                    <div class="row">
+                        <div class="portfolio-list_block">
+                            <img src="images/projects/travel-agency.png" alt="HTML-CSS Travel Agency" />
+                        </div>
+                        <div class="portfolio-list_block">
+                            <img src="images/projects/snake-js.png" alt="Snake en Javascript" />
+                        </div>
+                        <div class="portfolio-list_block">
+                            <img src="images/projects/cv-maquette.png" alt="CV HTML-CSS Maquette" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
